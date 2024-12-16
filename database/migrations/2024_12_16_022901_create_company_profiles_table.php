@@ -12,9 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('company_profiles', function (Blueprint $table) {
-            $table->integer('id_company')->autoIncrement()->primary();
+            $table->integer('id_company')->autoIncrement()->primaryKey();
             $table->string('company_name');
-            $table->
+            $table->string('logo');
+            $table->string('visi_company');
+            $table->string('misi_company');
+            $table->string('history');
+            $table->string('addres');
+            $table->string('phone_company');
+            $table->string('email_company');
             $table->timestamps();
         });
     }
