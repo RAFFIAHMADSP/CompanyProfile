@@ -13,8 +13,20 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->integer('id_products')->autoIncrement()->primarykey();
+
+            
+            $table->string('id_sevices');
+            $table->foreign('id_sevices')
+                ->references('id_sevices')
+                ->on('services')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
+
             $table->string('name_product');
             $table->string('descriptions_product');
+            $table->string('images');
+            $table->integer('price');
+            $table->string('destination_countries');
             $table->timestamps();
         });
     }
