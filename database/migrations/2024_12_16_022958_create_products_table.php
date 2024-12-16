@@ -15,9 +15,9 @@ return new class extends Migration
             $table->integer('id_products')->autoIncrement()->primarykey();
 
             
-            $table->string('id_sevices');
-            $table->foreign('id_sevices')
-                ->references('id_sevices')
+            $table->integer('id_services');
+            $table->foreign('id_services')
+                ->references('id_services')
                 ->on('services')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');

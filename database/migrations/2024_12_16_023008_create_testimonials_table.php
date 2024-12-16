@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('testimonials', function (Blueprint $table) {
             $table->integer('id_testimonials')->autoIncrement()->primaryKey();
 
-            $table->string('id_products');
+            $table->integer('id_products');
             $table->foreign('id_products')
                 ->references('id_products')
                 ->on('products')
@@ -23,7 +23,6 @@ return new class extends Migration
 
             $table->string('client_name');
             $table->string('client_company');
-            $table->string('testimonial');
             $table->string('testimonial');
 
             $table->timestamps();
