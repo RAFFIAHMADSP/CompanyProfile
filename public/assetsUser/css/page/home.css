@@ -1,0 +1,428 @@
+#hero, #hero-mobile{
+    position: relative;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    max-height: 80%;
+    padding-top: 5%;
+}
+
+#hero-mobile{
+    position: relative;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    max-height: 80%;
+    padding-top: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#hero img, #hero-mobile img{
+    /* height: auto; */
+    height: 100vh;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#hero .image, #hero-mobile .image{
+    display: none;
+    opacity: 0;
+}
+
+#hero .image-active, #hero-mobile .image-active{
+    display: block !important;
+    opacity: 1;
+}
+
+#hero .home-carousel, #hero-mobile .home-carousel-mobile{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+#hero .home-carousel .detail{
+    max-width: 1320px;
+    height: 100%;
+    background:none !important;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: end;
+    padding: 25px 10px;
+}
+
+#hero-mobile .home-carousel-mobile .detail{
+
+    max-width: 1320px;
+    height: 100%;
+    background:none !important;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    align-items: end;
+    padding: 25px 10px;
+}
+/* @media(max-width:991px){
+    #hero-mobile{
+        margin-top: 0px !important;
+        padding-top: 70px;
+    }
+    #hero-mobile .home-carousel .detail{
+        padding-top: 70px;
+        padding-bottom: 10px;
+    }
+} */
+
+#hero .home-carousel .detail .slide, #hero-mobile .home-carousel-mobile .detail .slide-mobile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+    gap: 8px;
+}
+
+#hero .home-carousel .detail .button, #hero-mobile .home-carousel-mobile .detail .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#hero .home-carousel .detail .button button, #hero-mobile .home-carousel-mobile .detail .button button{
+    border-radius: 100%;
+    padding: 8px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    background: none
+}
+
+#hero .home-carousel .detail .button button i, #hero-mobile .home-carousel-mobile .detail .button button i{
+    color: white;
+}
+@keyframes slide {
+    0% {
+        width: 8px;
+    }
+    100%{
+        width: 30px;
+    }
+}
+@keyframes slideout {
+    0% {
+        width: 30px;
+    }
+    100%{
+        width: 8px;
+    }
+}
+#hero .home-carousel .detail .slide .slide-button, #hero-mobile .home-carousel-mobile .detail .slide-mobile .slide-button{
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 0;
+    animation: slideout 0.2s ease-in-out;
+}
+
+#hero .home-carousel .detail .slide .slide-active, #hero-mobile .home-carousel-mobile .detail .slide-mobile .slide-active{
+    width: 30px;
+    background: #F0820A;
+    border-radius: 4px;
+    animation: slide 0.2s ease-in-out;
+}
+
+#service-desktop .content, #service-mobile .content {
+    position: relative;
+    border-radius: 6px;
+}
+
+#service-desktop .content:hover .text {
+    background: #000000b6 !important;
+    border-radius: 6px !important;
+    height: 55%;
+}
+
+#service-mobile .content:hover .text{
+
+    background: #000000b6 !important;
+    border-radius: 6px !important;
+    height: 80%;
+}
+
+@keyframes slideup{
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+
+        opacity: 1;
+    }
+}
+
+#service-desktop .content .text p, #service-mobile .content .text p {
+
+    opacity: 0;
+}
+
+#service-desktop .content:hover .text p, #service-mobile .content:hover .text p {
+
+
+    opacity: 1;
+    animation: slideup 0.5s ease-in-out;
+}
+
+#service-desktop .content:hover .text .arrow .rounded-circle svg, #service-mobile .content:hover .text .arrow .rounded-circle svg{
+
+    transform: rotate(45deg);
+    transition: .5s ease-in-out;
+}
+
+#service-desktop .content .text .arrow .rounded-circle svg, #service-mobile .content .text .arrow .rounded-circle svg{
+
+    transform: rotate(0);
+    transition: .5s ease-in-out;
+}
+
+#service-desktop .content .text, #service-mobile .content .text {
+    border-radius: 0 0 6px 6px; 
+    position: absolute;
+    bottom: 0;
+    background: #00000080;
+    transition: height 0.3s ease-in-out, background 0.3s ease-in-out;
+    overflow: hidden;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+#service-mobile .content .text {
+    border-radius: 0 0 6px 6px; 
+    position: absolute;
+    bottom: 0;
+    background: #00000080;
+    transition: height 0.3s ease-in-out, background 0.3s ease-in-out;
+    overflow: hidden;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+
+
+#client-desktop .content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+}
+
+#client-desktop .content img{
+    max-height: 70px;
+    max-width: 100px;
+    object-fit: contain;
+
+}
+
+
+#blog-desktop .box, #blog-mobile .box{
+    display: grid;
+    padding: 12px;
+}
+#blog-desktop .boxs, #blog-mobile .boxs{
+    display: grid;
+}
+
+#blog-desktop .card, #blog-mobile .card{
+    border: 0;
+    height: 100%;
+}
+
+#blog-desktop .card .card-body, #blog-mobile .card .card-body{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+}
+
+#blog-desktop .card .date, #blog-mobile .card .date{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#blog-desktop .card .main, #blog-mobile .card .main{
+    height: 100%;
+}
+
+#blog-desktop .card .more a, #blog-mobile .card .more a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 2px solid #002D71;
+    color: #5E6666;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+#blog-desktop .card .more, #blog-mobile .card .more {
+    display: flex;
+    align-items: end;
+    height: 100%;
+}
+#blog-desktop .card .more a i, #blog-mobile .card .more a i{
+    color: #002D71;
+}
+#blog-desktop .boxs .card img, #blog-mobile .boxs .card img{
+    height: 200px;
+}
+
+#award .picture .card{
+    padding: 10px;
+    box-shadow: 10px 16px 10px 0px #0000001A , -4px 0px 10px 0px #0000001A;
+}
+
+@media(max-width:515px){
+    #tapa .container img{
+        width: 100%;
+    }
+}
+
+#map { height: 425px; }
+
+#industry .square img{
+    scale: 1;
+    width: 60px !important;
+    height: auto !important;
+    /* transition: scale 0.3s ease-in-out, */
+}
+
+/* #industry .square:hover img{
+    scale: 1.5;
+} */
+
+#tags{
+
+    background-color: #002D71;
+}
+
+@media(max-width:992px){
+
+    #tags{
+
+        margin-bottom: 1rem;
+    }
+
+    #hero{
+
+        display: none !important;
+    }
+
+    #home-1-desktop{
+
+        display: none !important;
+    }
+
+    h4{
+
+        font-size: 16px !important;
+    }
+
+    #service-desktop{
+
+        display: none !important;
+    }
+
+    #blog-desktop{
+
+        display: none!important;
+    }
+}
+
+@media(min-width:993px){
+
+    #hero-mobile{
+
+        display: none !important;
+    }
+
+    #home-1-mobile{
+
+        display: none !important;
+    }
+
+    #service-mobile{
+
+        display: none !important;
+    }
+
+    #blog-mobile{
+
+        display: none!important;
+    }
+
+}
+
+@media(min-width:800px){
+
+    #client-mobile{
+
+        display: none !important;
+    }
+
+    #award-mobile{
+
+        display: none !important;
+    }
+}
+
+@media(max-width:799px){
+
+    #client-desktop{
+
+        display: none!important;
+    }
+
+    #award-desktop{
+
+        display: none !important;
+    }
+}
+
+@media(max-width:400px){
+
+    #award-mobile .container .row .card{
+
+        height: 80px !important;
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    
+    #award-mobile .container .row .card{
+
+        height: 80pt !important;
+        width: auto !important;
+    }
+}
