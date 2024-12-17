@@ -26,6 +26,4 @@ Route::middleware(['role:admin'])->group(function () {
     // Route::get('/admin/logout', [UserController::class, 'logout'])->name('admin.logout');
     // Route::get('/admin/profile', [UserController::class, 'profile'])->name('admin.profile');
     // Route::put('/admin/profile/update', [UserController::class, 'update'])->name('admin.profile.update');
-
-   
 });

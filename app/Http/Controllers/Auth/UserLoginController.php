@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Auth;
 
 class UserLoginController extends Controller
 {
-    public function login(){
+    public function login()
+    {
         return view('admin.login');
     }
 
@@ -25,7 +26,7 @@ class UserLoginController extends Controller
             if ($request->route()->named('user.submit') && $user->role !== 'user') {
                 Auth::logout();
                 return redirect()->route('user.login')->withErrors(['login_error' => 'Halaman tidak sesuai untuk role Anda.']);
-            }elseif ($request->route()->named('admin.submit') && $user->role !== 'admin') {
+            } elseif ($request->route()->named('admin.submit') && $user->role !== 'admin') {
                 Auth::logout();
                 return redirect()->route('admin.login')->withErrors(['login_error' => 'Halaman tidak sesuai untuk role Anda.']);
             }
