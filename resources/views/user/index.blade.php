@@ -1630,30 +1630,31 @@
 
     <!-- Vendor JS Files -->
     <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/aos/aos.js"></script> -->
-    <script src="themes/default/v2/assets/vendor/aos/aos.js"></script>
-    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-    <script src="themes/default/v2/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/glightbox/js/glightbox.min.js"></script> -->
-    <script src="themes/default/v2/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
-    <script src="themes/default/v2/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/swiper/swiper-bundle.min.js"></script> -->
-    <script src="themes/default/v2/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/waypoints/noframework.waypoints.js"></script> -->
-    <script src="themes/default/v2/assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/php-email-form/validate.js"></script> -->
-    <script src="themes/default/v2/assets/vendor/php-email-form/validate.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/aos/aos.js') }}?{{ env('ASSETS_USER') }}"></script>
+<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}?{{ env('ASSETS_USER') }}"></script>
+<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/glightbox/js/glightbox.min.js"></script> -->
+<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/glightbox/js/glightbox.min.js') }}?{{ env('ASSETS_USER') }}"></script>
+<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}?{{ env('ASSETS_USER') }}"></script>
+<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/swiper/swiper-bundle.min.js') }}?{{ env('ASSETS_USER') }}"></script>
+<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/waypoints/noframework.waypoints.js"></script> -->
+<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/waypoints/noframework.waypoints.js') }}?{{ env('ASSETS_USER') }}"></script>
+<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/php-email-form/validate.js"></script> -->
+<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/php-email-form/validate.js') }}?{{ env('ASSETS_USER') }}"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 
-    <!-- Template Main JS File -->
-    <!-- <script src="https://www.uniaircargo.co.id/assets/js/main.js"></script> -->
-    <script src="themes/default/v2/assets/js/main.js"></script>
+<!-- Template Main JS File -->
+<!-- <script src="https://www.uniaircargo.co.id/assets/js/main.js"></script> -->
+<script src="{{ asset('assetsUser/themes/default/v2/assets/js/main.js') }}?{{ env('ASSETS_USER') }}"></script>
+
 
     <!--<script src="https://kit.fontawesome.com/95a745a1a3.js" crossorigin="anonymous"></script>-->
     <script>
