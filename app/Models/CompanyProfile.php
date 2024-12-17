@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class CompanyProfile extends Model
 {
-    protected $table = 'company_profile';
+    protected $table = 'company_profiles';
     protected $primaryKey = 'id_company';
 
     protected $fillable = [
-        'company_name',
+        'Company_name',
         'logo',
         'visi_company',
         'misi_company',

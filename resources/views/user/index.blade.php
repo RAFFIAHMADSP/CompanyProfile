@@ -12,21 +12,16 @@
     <!-- Favicons -->
     <!-- <link href="https://www.uniaircargo.co.id/assets/img/favicon.ico" rel="icon"> -->
     <link href="favicon.ico" rel="icon">
-    <link href="assets/img/apple-touch-icon.png/" rel="apple-touch-icon">
+    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Vendor CSS Files -->
-    <link href="{{ asset('assetsUser/themes/default/v2/assets/vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('assetsUser/themes/default/v2/assets/vendor/bootstrap/css/bootstrap.min.css') }}"
-        rel="stylesheet">
-    <link href="{{ asset('assetsUser/themes/default/v2/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}"
-        rel="stylesheet">
-    <link href="{{ asset('assetsUser/themes/default/v2/assets/vendor/boxicons/css/boxicons.min.css') }}"
-        rel="stylesheet">
-    <link href="{{ asset('assetsUser/themes/default/v2/assets/vendor/glightbox/css/glightbox.min.css') }}"
-        rel="stylesheet">
-    <link href="{{ asset('assetsUser/themes/default/v2/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
-    <link href="{{ asset('assetsUser/themes/default/v2/assets/vendor/swiper/swiper-bundle.min.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('themes/default/v2/assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('themes/default/v2/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('themes/default/v2/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('themes/default/v2/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('themes/default/v2/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('themes/default/v2/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ asset('themes/default/v2/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
@@ -39,9 +34,9 @@
 
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('assetsUser/assetUser/css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('assetsUser/css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('assetsUser/themes/default/v2/assets/vendor/fontAwsome/css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('themes/default/v2/assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('themes/default/v2//assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('themes/default/v2/assets/vendor/fontAwsome/css/all.min.css') }}" rel="stylesheet">
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -65,7 +60,7 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <link rel="stylesheet" href="{{ asset('assetsUser/themes/default/v2/assets/css/page/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('themes/default/v2/assets/css/page/home.css') }}">
 </head>
 
 <body id="body-content">
@@ -74,13 +69,12 @@
         <div class="container d-flex justify-content-start">
             <!-- Logo Uniair -->
             <a href="{{ url('/') }}" class="logo">
-                <img src="{{ asset('assetsUser/themes/default/v2/icon/icon/logo-uniair.png') }}" alt=""
-                    class="img-fluid">
+                <img src="{{ asset('themes/default/v2/icon/icon/logo-uniair.png') }}" alt="" class="img-fluid">
             </a>
 
             <!-- Logo Dimerco -->
             <a href="https://dimerco.com" target="_blank" class="logo me-auto pt-1">
-                <img src="{{ asset('assetsUser/themes/default/v2/icon/icon/logo-dimerco.png') }}" alt=""
+                <img src="{{ asset('themes/default/v2/icon/icon/logo-dimerco.png') }}" alt=""
                     class="img-fluid">
             </a>
 
@@ -90,22 +84,21 @@
                         <a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="history/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/history.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/About/history.png') }}"
                                         class="logo-icon" alt=""><span>History</span></a></li>
                             <li><a href="key-industries/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/key%20industries.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/About/key%20industries.png') }}"
                                         class="icon" alt=""><span>Key Industries</span></a></li>
                             <li><a href="galleries/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/galleries.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/About/galleries.png') }}"
                                         class="icon" alt=""><span>Galleries</span></a></li>
                             <li><a href="achievement-%26-awards/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/achievements%20%26%20award.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/About/achievements%20%26%20award.png') }}"
                                         class="icon" alt=""><span>Achievements &amp; Awards</span></a></li>
                             <li><a href="social-activities/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/social%20activites.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/About/social%20activites.png') }}"
                                         class="icon" alt=""><span>Social Activities</span></a></li>
-                            <li><a href="career/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/career.png') }}"
+                            <li><a href="career/"><img src="{{ asset('themes/default/v2/icon/nav/About/career.png') }}"
                                         class="icon" alt=""><span>Career</span></a></li>
                         </ul>
                     </li>
@@ -113,29 +106,29 @@
                         <a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="air-freight/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/air%20freight.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/services/air%20freight.png') }}"
                                         class="icon" alt=""><span>Air Freight Forwarding</span></a></li>
                             <li><a href="ocean-freight/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/Ocean%20freight.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/services/Ocean%20freight.png') }}"
                                         class="icon" alt=""><span>Ocean Freight Forwarding</span></a></li>
                             <li><a href="customs-clearance/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/Customs%20clearance.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/services/Customs%20clearance.png') }}"
                                         class="icon" alt=""><span>Customs Clearance</span></a></li>
                             <li><a href="trucking-warehousing-distribution/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/trucking.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/services/trucking.png') }}"
                                         class="icon" alt=""><span>Trucking, Warehousing &amp;
                                         Distribution</span></a></li>
                             <li><a href="cargo-insurance-brokerage/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/cargo%20insurance%20brokerage.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/services/cargo%20insurance%20brokerage.png') }}"
                                         class="icon" alt=""><span>Cargo Insurance Brokerage</span></a></li>
                             <li><a href="courier-services/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/truck.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/services/truck.png') }}"
                                         class="icon" alt=""><span>Courier Services</span></a></li>
                             <li><a href="multimodal-transportation/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/multimodal%20transportation.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/services/multimodal%20transportation.png') }}"
                                         class="icon" alt=""><span>Multimodal Transportation</span></a></li>
                             <li><a href=""><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/value%20added%20services.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/services/value%20added%20services.png') }}"
                                         class="icon" alt=""><span>Value Added Services</span></a></li>
                         </ul>
                     </li>
@@ -143,13 +136,13 @@
                         <a href="#"><span>Resources</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="blog/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/Resource/blog.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/Resource/blog.png') }}"
                                         class="logo-icon" alt=""><span>Blog</span></a></li>
                             <li><a href="news-press/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/Resource/news%20%26%20press.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/Resource/news%20%26%20press.png') }}"
                                         class="icon" alt=""><span>News &amp; Press</span></a></li>
                             <li><a href="appendix-and-glossary/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/Resource/appendix%20%26%20glossary.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/Resource/appendix%20%26%20glossary.png') }}"
                                         class="icon" alt=""><span>Appendix &amp; Glossary</span></a></li>
                         </ul>
                     </li>
@@ -157,10 +150,10 @@
                         <a href="#"><span>Networking</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="domestic-market/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/Networking/domestic%20market.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/Networking/domestic%20market.png') }}"
                                         class="logo-icon" alt=""><span>Domestic Network</span></a></li>
                             <li><a href="international-network/"><img
-                                        src="{{ asset('assetsUser/themes/default/v2/icon/nav/Networking/international%20market.png') }}"
+                                        src="{{ asset('themes/default/v2/icon/nav/Networking/international%20market.png') }}"
                                         class="icon" alt=""><span>International Network</span></a></li>
                         </ul>
                     </li>
@@ -188,8 +181,7 @@
                     src=" https://www.uniaircargo.co.id/themes/default/v2/icon/icon/logo-uniair.png " alt=""
                     class="img-fluid"></a>
             <a href="https://dimerco.com" target="blank" class="logo me-auto pt-1"><img
-                    src="{{ 'assetsUser/themes/default/v2/icon/icon/logo-dimerco.png' }}" alt=""
-                    class="img-fluid"></a>
+                    src="{{ 'themes/default/v2/icon/icon/logo-dimerco.png' }}" alt="" class="img-fluid"></a>
             <button class="hamburger">
                 <div class="bar"></div>
             </button>
@@ -202,8 +194,8 @@
                 <div class="col-6 my-auto">
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/history.png') }}"
-                                class="logo-icon" alt="">
+                            <img src="{{ asset('themes/default/v2/icon/nav/About/history.png') }}" class="logo-icon"
+                                alt="">
                         </div>
                         <div class="col-7">
                             <a href="history/" class="text-black"><span>History</span> </a>
@@ -211,7 +203,7 @@
                     </div>
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/social%20activites.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/About/social%20activites.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-7">
@@ -220,8 +212,8 @@
                     </div>
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/galleries.png') }}"
-                                class="icon" alt="">
+                            <img src="{{ asset('themes/default/v2/icon/nav/About/galleries.png') }}" class="icon"
+                                alt="">
                         </div>
                         <div class="col-7">
                             <a href="galleries/" class="text-black"><span>Galleries</span> </a>
@@ -231,7 +223,7 @@
                 <div class="col-6 my-auto">
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/key%20industries.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/About/key%20industries.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-9">
@@ -240,7 +232,7 @@
                     </div>
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/achievements%20%26%20award.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/About/achievements%20%26%20award.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-9">
@@ -250,8 +242,8 @@
                     </div>
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/About/career.png') }}"
-                                class="icon" alt="">
+                            <img src="{{ asset('themes/default/v2/icon/nav/About/career.png') }}" class="icon"
+                                alt="">
                         </div>
                         <div class="col-7">
                             <a href="career/" class="text-black"><span>Career</span> </a>
@@ -265,7 +257,7 @@
                 <div class="col-6 my-auto">
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/air%20freight.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/services/air%20freight.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-7">
@@ -274,7 +266,7 @@
                     </div>
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/cargo%20insurance%20brokerage.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/services/cargo%20insurance%20brokerage.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-7">
@@ -284,7 +276,7 @@
                     </div>
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/Customs%20clearance.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/services/Customs%20clearance.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-7">
@@ -293,7 +285,7 @@
                     </div>
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/multimodal%20transportation.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/services/multimodal%20transportation.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-7">
@@ -305,7 +297,7 @@
                 <div class="col-6 my-auto">
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/Ocean%20freight.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/services/Ocean%20freight.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-9">
@@ -314,8 +306,8 @@
                     </div>
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/trucking.png') }}"
-                                class="icon" alt="">
+                            <img src="{{ asset('themes/default/v2/icon/nav/services/trucking.png') }}" class="icon"
+                                alt="">
                         </div>
                         <div class="col-9">
                             <a href="trucking-warehousing-distribution/" class="text-black"><span>Trucking,
@@ -324,8 +316,8 @@
                     </div>
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/truck.png') }}"
-                                class="icon" alt="">
+                            <img src="{{ asset('themes/default/v2/icon/nav/services/truck.png') }}" class="icon"
+                                alt="">
                         </div>
                         <div class="col-7">
                             <a href="courier-services/" class="text-black"><span>Courier Services</span></a>
@@ -333,7 +325,7 @@
                     </div>
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/services/value%20added%20services.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/services/value%20added%20services.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-9">
@@ -348,7 +340,7 @@
                 <div class="col-6 my-auto">
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/Networking/domestic%20market.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/Networking/domestic%20market.png') }}"
                                 class="logo-icon" alt="">
                         </div>
                         <div class="col-7">
@@ -359,7 +351,7 @@
                 <div class="col-6 my-auto">
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/Networking/international%20market.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/Networking/international%20market.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-9">
@@ -374,8 +366,8 @@
                 <div class="col-6">
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/Resource/blog.png') }}"
-                                class="logo-icon" alt="">
+                            <img src="{{ asset('themes/default/v2/icon/nav/Resource/blog.png') }}" class="logo-icon"
+                                alt="">
                         </div>
                         <div class="col-7">
                             <a href="blog/" class="text-black"><span>Blog</span> </a>
@@ -383,7 +375,7 @@
                     </div>
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/Resource/appendix%20%26%20glossary.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/Resource/appendix%20%26%20glossary.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-9">
@@ -395,7 +387,7 @@
                 <div class="col-6">
                     <div class="row mx-auto my-auto">
                         <div class="col-3 d-flex flex-wrap align-items-center">
-                            <img src="{{ asset('assetsUser/themes/default/v2/icon/nav/Resource/news%20%26%20press.png') }}"
+                            <img src="{{ asset('themes/default/v2/icon/nav/Resource/news%20%26%20press.png') }}"
                                 class="icon" alt="">
                         </div>
                         <div class="col-9">
@@ -414,59 +406,92 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero-mobile" style="position: relative; height: 100vh;">
         <!-- Gambar-gambar yang menggunakan asset() -->
-        <img src="{{ asset('assetsUser/upload/files/banners/img-b3s6743faa5bf8c7.jpg') }}" alt="HUT 35"
+        <img src="{{ asset('upload/files/banners/img-b3s6743faa5bf8c7.jpg') }}" alt="HUT 35"
             class="image mobile-home-image">
-        <img src="{{ asset('assetsUser/upload/files/banners/img-ijh5d9db7af0aa7b.jpg') }}" alt="Services"
+        <img src="{{ asset('upload/files/banners/img-ijh5d9db7af0aa7b.jpg') }}" alt="Services"
             class="image mobile-home-image">
-        <img src="{{ asset('assetsUser/upload/files/banners/img-b0d5d9db8739a205.jpg') }}" alt="Competitive Rates"
+        <img src="{{ asset('upload/files/banners/img-b0d5d9db8739a205.jpg') }}" alt="Competitive Rates"
             class="image mobile-home-image">
-        <img src="{{ asset('assetsUser/upload/files/banners/img-9mi5d9db907a3119.jpg') }}" alt="Air Custom"
+        <img src="{{ asset('upload/files/banners/img-9mi5d9db907a3119.jpg') }}" alt="Air Custom"
             class="image mobile-home-image">
-        <img src="{{ asset('assetsUser/upload/files/banners/img-xig5d9db6357e44e.jpg') }}" alt="Core Values"
+        <img src="{{ asset('upload/files/banners/img-xig5d9db6357e44e.jpg') }}" alt="Core Values"
             class="image mobile-home-image">
 
         <div class="home-carousel-mobile">
             <div class="detail">
-                <!-- <div class="button">
+                <div class="button">
                     <button class="previous-button"><i class="fa-solid fa-chevron-left fa-lg"></i></button>
-                </div> -->
+                </div>
                 <div class="slide-mobile">
                     <!-- Konten slide bisa ditambahkan di sini -->
                 </div>
-                <!-- <div class="button">
+                <div class="button">
                     <button class="next-button"><i class="fa-solid fa-chevron-right fa-lg"></i></button>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
-
-
     <!-- End Hero -->
 
     <!-- ======= Mobile Hero Section ======= -->
-    <section id="hero-mobile" style="position: relative; height: 100vh;">
+    {{-- <section id="hero-mobile" style="position: relative; height: 100vh;">
         <!-- Gambar-gambar yang menggunakan asset() dari folder assetsUser -->
-        <img src="{{ asset('assetsUser/img-b3s6743faa5bf8c7.jpg') }}" alt="HUT 35"
-            class="image mobile-home-image">
-        <img src="{{ asset('assetsUser/img-ijh5d9db7af0aa7b.jpg') }}" alt="Services"
-            class="image mobile-home-image">
-        <img src="{{ asset('assetsUser/img-b0d5d9db8739a205.jpg') }}" alt="Competitive Rates"
-            class="image mobile-home-image">
-        <img src="{{ asset('assetsUser/img-9mi5d9db907a3119.jpg') }}" alt="Air Custom"
-            class="image mobile-home-image">
-        <img src="{{ asset('assetsUser/img-xig5d9db6357e44e.jpg') }}" alt="Core Values"
-            class="image mobile-home-image">
+        <img src="{{ asset('img-b3s6743faa5bf8c7.jpg') }}" alt="HUT 35" class="image mobile-home-image">
+        <img src="{{ asset('img-ijh5d9db7af0aa7b.jpg') }}" alt="Services" class="image mobile-home-image">
+        <img src="{{ asset('img-b0d5d9db8739a205.jpg') }}" alt="Competitive Rates" class="image mobile-home-image">
+        <img src="{{ asset('img-9mi5d9db907a3119.jpg') }}" alt="Air Custom" class="image mobile-home-image">
+        <img src="{{ asset('img-xig5d9db6357e44e.jpg') }}" alt="Core Values" class="image mobile-home-image">
 
         <div class="home-carousel-mobile">
             <div class="detail">
                 <!-- Konten slide dapat ditambahkan di sini -->
+                <div class="home-carousel">
+                    <div class="detail">
+                        <div class="button">
+                            <button class="previous-button"><i class="fa-solid fa-chevron-left fa-lg"></i></button>
+                        </div>
+                        <div class="slide">
+
+                            <button class="slide-button"></button><button
+                                class="slide-button slide-active"></button><button
+                                class="slide-button"></button><button class="slide-button"></button><button
+                                class="slide-button"></button>
+                        </div>
+                        <div class="button">
+                            <button class="next-button"><i class="fa-solid fa-chevron-right fa-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
                 <div class="slide-mobile">
                     <!-- Slide konten akan ditambahkan di sini -->
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
+    <section id="hero" style="position: relative; height: 100vh;">
+       <!-- Gambar-gambar yang menggunakan asset() dari folder assetsUser -->
+       <img src="{{ asset('img-b3s6743faa5bf8c7.jpg') }}" alt="HUT 35" class="image mobile-home-image">
+       <img src="{{ asset('img-ijh5d9db7af0aa7b.jpg') }}" alt="Services" class="image mobile-home-image">
+       <img src="{{ asset('img-b0d5d9db8739a205.jpg') }}" alt="Competitive Rates" class="image mobile-home-image">
+       <img src="{{ asset('img-9mi5d9db907a3119.jpg') }}" alt="Air Custom" class="image mobile-home-image">
+       <img src="{{ asset('img-xig5d9db6357e44e.jpg') }}" alt="Core Values" class="image mobile-home-image">
+            
+    
+        <div class="home-carousel">
+            <div class="detail">
+                <div class="button">
+                    <button class="previous-button"><i class="fa-solid fa-chevron-left fa-lg"></i></button>
+                </div>
+                <div class="slide">
+                    
+                <button class="slide-button slide-active"></button><button class="slide-button"></button><button class="slide-button"></button><button class="slide-button"></button><button class="slide-button"></button></div>
+                <div class="button">
+                    <button class="next-button"><i class="fa-solid fa-chevron-right fa-lg"></i></button>
+                </div>         
+            </div>
+        </div>
+    </section>
 
     <!-- End Mobile Hero -->
 
@@ -484,8 +509,8 @@
             </div>
             <div class="w-100 d-flex flex-column g-2">
                 <div class="part d-flex flex-row g-2">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/about/experience.png') }}"
-                        alt="" style="height: 40px;width:40px">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/about/experience.png') }}" alt=""
+                        style="height: 40px;width:40px">
                     <div class="content">
                         <h3>Experience</h3>
                         <p>Over 33 years of experience as a leading freight forwarder company trusted by numerous
@@ -493,7 +518,7 @@
                     </div>
                 </div>
                 <div class="part d-flex flex-row g-2">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/about/global_network.png') }}"
+                    <img src="{{ asset('themes/default/v2/assets/img/home/about/global_network.png') }}"
                         alt="" style="height: 37px;width:37px">
                     <div class="content">
                         <h3>Global Network</h3>
@@ -502,7 +527,7 @@
                     </div>
                 </div>
                 <div class="part d-flex flex-row g-2">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/about/flexible_agile.png') }}"
+                    <img src="{{ asset('themes/default/v2/assets/img/home/about/flexible_agile.png') }}"
                         alt="" style="height: 40px;width:40px">
                     <div class="content">
                         <h3>Flexible and Agile</h3>
@@ -526,8 +551,8 @@
             </div>
             <div class="w-100 d-flex flex-column g-2">
                 <div class="part d-flex flex-row g-2">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/about/experience.png') }}"
-                        alt="" style="height: 30px;width:30px">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/about/experience.png') }}" alt=""
+                        style="height: 30px;width:30px">
                     <div class="content">
                         <h2>Experience</h2>
                         <p>Over 33 years of experience as a leading freight forwarder company trusted by numerous
@@ -535,7 +560,7 @@
                     </div>
                 </div>
                 <div class="part d-flex flex-row g-2">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/about/global_network.png') }}"
+                    <img src="{{ asset('themes/default/v2/assets/img/home/about/global_network.png') }}"
                         alt="" style="height: 27px;width:27px">
                     <div class="content">
                         <h2>Global Network</h2>
@@ -544,7 +569,7 @@
                     </div>
                 </div>
                 <div class="part d-flex flex-row g-2">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/about/flexible_agile.png') }}"
+                    <img src="{{ asset('themes/default/v2/assets/img/home/about/flexible_agile.png') }}"
                         alt="" style="height: 30px;width:30px">
                     <div class="content">
                         <h2>Flexible and Agile</h2>
@@ -559,77 +584,6 @@
             </div>
         </div>
     </section>
-
-
-
-    <section id="service-desktop" class="service section-bg-3">
-        <div class="container">
-            <div class="title">
-                <h1 style="color: white">Uniair Cargo’s Services</h1>
-                <h3 style="color: white" class="text-center">Our wide range of services cater to your business
-                    specific needs. Reliable whenever and wherever needed.</h3>
-            </div>
-            <div class="d-flex flex-wrap flex-row">
-
-                <div class="col-12 col-md-4 col-lg-3 p-2">
-                    <div class="content">
-                        <div class="text w-100 p-2 px-3 g-2">
-                            <div class="arrow d-flex align-items-center justify-content-between">
-                                <h4 class="">Air Freight Forwarding</h4>
-                                <a href="{{ url('air-freight/') }}">
-                                    <div style="height: 50px; width:50px; background:#F0820A;padding:10px"
-                                        class="rounded-circle">
-                                        <svg width="30" height="30" viewBox="0 0 33 33" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.13814 7.83257H24.8033V23.4977M23.7154 8.92042L7.83271 24.8031"
-                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                            <p class="text-white fw-lighter">For time-sensitive delivery.</p>
-                        </div>
-                        <!-- Menggunakan asset() untuk gambar -->
-                        <img class="w-100" style="min-height: 250px;border-radius:6px"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/service/1.png') }}"
-                            alt="">
-                    </div>
-                </div>
-
-                <!-- Repeat this structure for other services with updated links and assets -->
-                <div class="col-12 col-md-4 col-lg-3 p-2">
-                    <div class="content">
-                        <div class="text w-100 p-2 px-3 g-2">
-                            <div class="arrow d-flex align-items-center justify-content-between">
-                                <h4 class="">Ocean Freight Forwarding</h4>
-                                <a href="{{ url('ocean-freight/') }}">
-                                    <div style="height: 50px; width:50px; background:#F0820A;padding:10px"
-                                        class="rounded-circle">
-                                        <svg width="30" height="30" viewBox="0 0 33 33" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.13814 7.83257H24.8033V23.4977M23.7154 8.92042L7.83271 24.8031"
-                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                            <p class="text-white fw-lighter">For cost-conscious businesses.</p>
-                        </div>
-                        <!-- Menggunakan asset() untuk gambar -->
-                        <img class="w-100" style="min-height: 250px;border-radius:6px"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/service/2.png') }}"
-                            alt="">
-                    </div>
-                </div>
-
-                <!-- Continue similarly for other services -->
-
-            </div>
-        </div>
-    </section>
-
 
     <section id="service-desktop" class="service section-bg-3">
         <div class="container">
@@ -661,7 +615,7 @@
                         </div>
                         <!-- Menggunakan asset() dengan assetsUser -->
                         <img class="w-100" style="min-height: 250px;border-radius:6px"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/service/1.png') }}"
+                            src="{{ asset('themes/default/v2/assets/img/home/service/1.png') }}"
                             alt="Air Freight Forwarding">
                     </div>
                 </div>
@@ -687,7 +641,7 @@
                         </div>
                         <!-- Menggunakan asset() dengan assetsUser -->
                         <img class="w-100" style="min-height: 250px;border-radius:6px"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/service/2.png') }}"
+                            src="{{ asset('themes/default/v2/assets/img/home/service/2.png') }}"
                             alt="Ocean Freight Forwarding">
                     </div>
                 </div>
@@ -713,7 +667,7 @@
                         </div>
                         <!-- Menggunakan asset() dengan assetsUser -->
                         <img class="w-100" style="min-height: 250px;border-radius:6px"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/service/3.png') }}"
+                            src="{{ asset('themes/default/v2/assets/img/home/service/3.png') }}"
                             alt="Customs Clearance">
                     </div>
                 </div>
@@ -739,7 +693,7 @@
                         </div>
                         <!-- Menggunakan asset() dengan assetsUser -->
                         <img class="w-100" style="min-height: 250px;border-radius:6px"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/service/4.png') }}"
+                            src="{{ asset('themes/default/v2/assets/img/home/service/4.png') }}"
                             alt="Trucking Warehousing Distribution">
                     </div>
                 </div>
@@ -766,7 +720,7 @@
                         </div>
                         <!-- Menggunakan asset() dengan assetsUser -->
                         <img class="w-100" style="min-height: 250px;border-radius:6px"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/service/5.png') }}"
+                            src="{{ asset('themes/default/v2/assets/img/home/service/5.png') }}"
                             alt="Cargo Insurance Brokerage">
                     </div>
                 </div>
@@ -793,7 +747,7 @@
                         </div>
                         <!-- Menggunakan asset() dengan assetsUser -->
                         <img class="w-100" style="min-height: 250px;border-radius:6px"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/service/6.png') }}"
+                            src="{{ asset('themes/default/v2/assets/img/home/service/6.png') }}"
                             alt="Courier Services">
                     </div>
                 </div>
@@ -820,7 +774,7 @@
                         </div>
                         <!-- Menggunakan asset() dengan assetsUser -->
                         <img class="w-100" style="min-height: 250px;border-radius:6px"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/service/7.png') }}"
+                            src="{{ asset('themes/default/v2/assets/img/home/service/7.png') }}"
                             alt="Multimodal Transportation">
                     </div>
                 </div>
@@ -840,72 +794,74 @@
             <div class="">
                 <div class="d-flex flex-row flex-wrap industrial justify-content-center mx-auto mb-5">
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4" src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/14.png') }}"
-                            alt="" style="width: 60px !important; height: auto !important;">
+                        <img class="mx-auto p-1 my-4"
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/14.png') }}" alt=""
+                            style="width: 60px !important; height: auto !important;">
                         <h3 class="text-center">Automotive</h3>
                     </div>
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4" src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/15.png') }}"
-                            alt="" style="width: 60px !important; height: auto !important;">
+                        <img class="mx-auto p-1 my-4"
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/15.png') }}" alt=""
+                            style="width: 60px !important; height: auto !important;">
                         <h3 class="text-center">Aerospace</h3>
                     </div>
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4 " src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/16.png') }}"
-                            alt="">
+                        <img class="mx-auto p-1 my-4 "
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/16.png') }}" alt="">
                         <h3 class="text-center">Chemical</h3>
                     </div>
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4 " src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/17.png') }}"
-                            alt="">
+                        <img class="mx-auto p-1 my-4 "
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/17.png') }}" alt="">
                         <h3 class="text-center">Construction</h3>
                     </div>
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4" src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/18.png') }}"
-                            alt="">
+                        <img class="mx-auto p-1 my-4"
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/18.png') }}" alt="">
                         <h3 class="text-center">Cosmetics</h3>
                     </div>
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4" src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/19.png') }}"
-                            alt="">
+                        <img class="mx-auto p-1 my-4"
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/19.png') }}" alt="">
                         <h3 class="text-center">Energy</h3>
                     </div>
                 </div>
                 <div class="d-flex flex-row flex-wrap industrial justify-content-center mx-auto mt-5">
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4" src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/20.png') }}"
-                            alt="">
+                        <img class="mx-auto p-1 my-4"
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/20.png') }}" alt="">
                         <h3 class="text-center">Electronics</h3>
                     </div>
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4" src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/21.png') }}"
-                            alt="">
+                        <img class="mx-auto p-1 my-4"
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/21.png') }}" alt="">
                         <h3 class="text-center">Food and Beverage</h3>
                     </div>
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4" src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/22.png') }}"
-                            alt="">
+                        <img class="mx-auto p-1 my-4"
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/22.png') }}" alt="">
                         <h3 class="text-center">Industrial</h3>
                     </div>
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4" src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/23.png') }}"
-                            alt="">
+                        <img class="mx-auto p-1 my-4"
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/23.png') }}" alt="">
                         <h3 class="text-center">Plastics and Rubber</h3>
                     </div>
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4" src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/24.png') }}"
-                            alt="">
+                        <img class="mx-auto p-1 my-4"
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/24.png') }}" alt="">
                         <h3 class="text-center">Retail</h3>
                     </div>
                     <div class="square col-6 col-md-3 col-lg-2 group1 col-md-3 col-lg-2 group1 d-flex flex-column">
-                        <img class="mx-auto p-1 my-4" src="{{ asset('assetsUser/themes/default/v2/assets/img/home/industry/25.png') }}"
-                            alt="">
+                        <img class="mx-auto p-1 my-4"
+                            src="{{ asset('themes/default/v2/assets/img/home/industry/25.png') }}" alt="">
                         <h3 class="text-center">Semiconductor</h3>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
 
     <section id="maps" class="section-bg">
         <div class="container">
@@ -925,75 +881,76 @@
                 <h1>Our Clients</h1>
             </div>
             <div class="content">
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/1.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/1.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/1.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/1.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/2.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/2.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/2.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/2.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/3.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/3.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/3.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/3.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/4.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/4.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/4.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/4.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/5.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/5.png') }}" class="my-auto"
-                        style="width: 113px; height: 40px; max-width: fit-content; max-height: fit-content;" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/5.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/5.png') }}" class="my-auto"
+                        style="width: 113px; height: 40px; max-width: fit-content; max-height: fit-content;"
+                        alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/6.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/6.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/6.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/6.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/7.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/7.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/7.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/7.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/8.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/8.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/8.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/8.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/9.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/9.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/9.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/9.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/10.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/10.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/10.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/10.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/11.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/11.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/11.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/11.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/12.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/12.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/12.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/12.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/13.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/13.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/13.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/13.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/14.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/14.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/14.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/14.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/15.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/15.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/15.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/15.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/16.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/16.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/16.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/16.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/17.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/17.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/17.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/17.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/22.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/22.png') }}" alt=""
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/22.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/22.png') }}" alt=""
                         style="width: 140px!important; height: 70px!important; max-width: fit-content; max-height: fit-content;">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/19.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/19.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/19.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/19.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/20.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/20.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/20.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/20.png') }}" alt="">
                 </a>
-                <a href="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/21.png') }}">
-                    <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/21.png') }}" alt="">
+                <a href="{{ asset('themes/default/v2/assets/img/home/clients/21.png') }}">
+                    <img src="{{ asset('themes/default/v2/assets/img/home/clients/21.png') }}" alt="">
                 </a>
             </div>
         </div>
     </section>
-    
+
 
     <section id="client-mobile">
         <div class="container">
@@ -1001,31 +958,52 @@
                 <h1>Our Clients</h1>
             </div>
             <div class="content d-flex flex-wrap justify-content-center" style="gap: 16px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/1.png') }}" alt="" class="my-auto" style="width: 63px; height: 21px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/2.png') }}" alt="" class="my-auto" style="width: 51px; height: 44px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/3.png') }}" alt="" class="my-auto" style="width: 84px; height: 16px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/4.png') }}" alt="" class="my-auto" style="width: 97px; height: 14px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/5.png') }}" alt="" class="my-auto" style="width: 57px; height: 20px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/6.png') }}" alt="" class="my-auto" style="width: 45px; height: 50px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/7.png') }}" alt="" class="my-auto" style="width: 33px; height: 33px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/8.png') }}" alt="" class="my-auto" style="width: 30px; height: 15px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/9.png') }}" alt="" class="my-auto" style="width: 50px; height: 19px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/10.png') }}" alt="" class="my-auto" style="width: 56px; height: 11px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/11.png') }}" alt="" class="my-auto" style="width: 36px; height: 31px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/12.png') }}" alt="" class="my-auto" style="width: 59px; height: 29px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/13.png') }}" alt="" class="my-auto" style="width: 33px; height: 32px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/14.png') }}" alt="" class="my-auto" style="width: 81px; height: 26px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/15.png') }}" alt="" class="my-auto" style="width: 36px; height: 26px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/16.png') }}" alt="" class="my-auto" style="width: 113px; height: 25px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/17.png') }}" alt="" class="my-auto" style="width: 83px; height: 25px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/22.png') }}" alt="" class="my-auto" style="width: 85px; height: 30px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/19.png') }}" alt="" class="my-auto" style="width: 84px; height: 48px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/20.png') }}" alt="" class="my-auto" style="width: 88px; height: 47px;">
-                <img src="{{ asset('assetsUser/themes/default/v2/assets/img/home/clients/21.png') }}" alt="" class="my-auto" style="width: 87px; height: 50px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/1.png') }}" alt=""
+                    class="my-auto" style="width: 63px; height: 21px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/2.png') }}" alt=""
+                    class="my-auto" style="width: 51px; height: 44px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/3.png') }}" alt=""
+                    class="my-auto" style="width: 84px; height: 16px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/4.png') }}" alt=""
+                    class="my-auto" style="width: 97px; height: 14px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/5.png') }}" alt=""
+                    class="my-auto" style="width: 57px; height: 20px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/6.png') }}" alt=""
+                    class="my-auto" style="width: 45px; height: 50px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/7.png') }}" alt=""
+                    class="my-auto" style="width: 33px; height: 33px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/8.png') }}" alt=""
+                    class="my-auto" style="width: 30px; height: 15px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/9.png') }}" alt=""
+                    class="my-auto" style="width: 50px; height: 19px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/10.png') }}" alt=""
+                    class="my-auto" style="width: 56px; height: 11px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/11.png') }}" alt=""
+                    class="my-auto" style="width: 36px; height: 31px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/12.png') }}" alt=""
+                    class="my-auto" style="width: 59px; height: 29px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/13.png') }}" alt=""
+                    class="my-auto" style="width: 33px; height: 32px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/14.png') }}" alt=""
+                    class="my-auto" style="width: 81px; height: 26px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/15.png') }}" alt=""
+                    class="my-auto" style="width: 36px; height: 26px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/16.png') }}" alt=""
+                    class="my-auto" style="width: 113px; height: 25px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/17.png') }}" alt=""
+                    class="my-auto" style="width: 83px; height: 25px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/22.png') }}" alt=""
+                    class="my-auto" style="width: 85px; height: 30px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/19.png') }}" alt=""
+                    class="my-auto" style="width: 84px; height: 48px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/20.png') }}" alt=""
+                    class="my-auto" style="width: 88px; height: 47px;">
+                <img src="{{ asset('themes/default/v2/assets/img/home/clients/21.png') }}" alt=""
+                    class="my-auto" style="width: 87px; height: 50px;">
             </div>
         </div>
     </section>
-    
+
 
     <section>
         <div class="d-flex align-items-center container">
@@ -1046,7 +1024,8 @@
                 <div class="image">
 
 
-                    <img class="img-3" src="{{asset('assetsUser/themes/default/v2/icon/contact/center.png')}}" alt="">
+                    <img class="img-3" src="{{ asset('themes/default/v2/icon/contact/center.png') }}"
+                        alt="">
                 </div>
             </div>
         </div>
@@ -1060,17 +1039,21 @@
             <div class="row">
                 <div class="box col-lg-6">
                     <div class="card">
-                        <img class="card-img-top main" src="{{ asset('assetsUser/upload/files/news/img-pgm674536d7be3e4.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top main"
+                            src="{{ asset('upload/files/news/img-pgm674536d7be3e4.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p class="date">22 November 2024</p>
                             <div class="detail">
                                 <div class="title">
                                     <h2>Top 5 Common Causes on Why New Businesses Fail?</h2>
-                                    <p>Starting a business can often be seen as an exciting journey filled with ambition, creativity, and the constant strive towards success. However, the harsh reality of today’s industry is that many new businesses struggle</p>
+                                    <p>Starting a business can often be seen as an exciting journey filled with
+                                        ambition, creativity, and the constant strive towards success. However, the
+                                        harsh reality of today’s industry is that many new businesses struggle</p>
                                 </div>
                             </div>
                             <div class="more d-flex align-items-end d-none d-md-flex">
-                                <a class="d-flex align-items-center" href="blog/top-5-common-causes-on-why-new-businesses-fail-608/">
+                                <a class="d-flex align-items-center"
+                                    href="blog/top-5-common-causes-on-why-new-businesses-fail-608/">
                                     Read More
                                     <i class="fa-solid fa-arrow-right ms-2"></i>
                                 </a>
@@ -1081,8 +1064,11 @@
                 <div class="boxs col-lg-6">
                     <div class="row">
                         <div class="box col-md-6">
-                            <a class="card" href="blog/understanding-balance-of-trade-and-the-economical-impact-607/">
-                                <img class="card-img-top main" src="{{ asset('assetsUser/upload/files/news/img-nt16745353edfecc.jpg') }}" alt="Card image cap">
+                            <a class="card"
+                                href="blog/understanding-balance-of-trade-and-the-economical-impact-607/">
+                                <img class="card-img-top main"
+                                    src="{{ asset('upload/files/news/img-nt16745353edfecc.jpg') }}"
+                                    alt="Card image cap">
                                 <div class="card-body">
                                     <p class="date">18 November 2024</p>
                                     <div class="detail">
@@ -1094,8 +1080,11 @@
                             </a>
                         </div>
                         <div class="box col-md-6">
-                            <a class="card" href="blog/7-types-of-loans-for-businesses-which-one-should-you-choose-606/">
-                                <img class="card-img-top main" src="{{ asset('assetsUser/upload/files/news/img-dlh673aed06cdc09.jpg') }}" alt="Card image cap">
+                            <a class="card"
+                                href="blog/7-types-of-loans-for-businesses-which-one-should-you-choose-606/">
+                                <img class="card-img-top main"
+                                    src="{{ asset('upload/files/news/img-dlh673aed06cdc09.jpg') }}"
+                                    alt="Card image cap">
                                 <div class="card-body">
                                     <p class="date">15 November 2024</p>
                                     <div class="detail">
@@ -1108,7 +1097,9 @@
                         </div>
                         <div class="box col-md-6">
                             <a class="card" href="blog/apa-itu-oog-cargo-605/">
-                                <img class="card-img-top main" src="{{ asset('assetsUser/upload/files/news/img-i8s6736ae81a7b52.jpg') }}" alt="Card image cap">
+                                <img class="card-img-top main"
+                                    src="{{ asset('upload/files/news/img-i8s6736ae81a7b52.jpg') }}"
+                                    alt="Card image cap">
                                 <div class="card-body">
                                     <p class="date">12 November 2024</p>
                                     <div class="detail">
@@ -1120,8 +1111,11 @@
                             </a>
                         </div>
                         <div class="box col-md-6">
-                            <a class="card" href="blog/faktor-faktor-yang-harus-diperhatikan-sebelum-relokasi-pabrik-604/">
-                                <img class="card-img-top main" src="{{ asset('assetsUser/upload/files/news/img-aze67360fb69c94c.jpg') }}" alt="Card image cap">
+                            <a class="card"
+                                href="blog/faktor-faktor-yang-harus-diperhatikan-sebelum-relokasi-pabrik-604/">
+                                <img class="card-img-top main"
+                                    src="{{ asset('upload/files/news/img-aze67360fb69c94c.jpg') }}"
+                                    alt="Card image cap">
                                 <div class="card-body">
                                     <p class="date">09 November 2024</p>
                                     <div class="detail">
@@ -1136,9 +1130,9 @@
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
 
-    {{-- <section id="blog-mobile">
+    <section id="blog-mobile">
         <div class="container">
             <div class="title align-items-center">
                 <h1>Recent Blog</h1>
@@ -1146,7 +1140,8 @@
             <div class="autoplay">
                 <div class="card p-2">
                     <!-- Image with assetsUser appended to the path -->
-                    <img class="card-img-top main" src="{{ asset('upload/files/news/img-pgm674536d7be3e4.jpg') }}?{{ env('ASSETS_USER') }}"
+                    <img class="card-img-top main"
+                        src="{{ asset('upload/files/news/img-pgm674536d7be3e4.jpg') }}?{{ env('ASSETS_USER') }}"
                         alt="Card image cap">
                     <div class="card-body">
                         <p class="date">22 November 2024</p>
@@ -1170,7 +1165,8 @@
                 </div>
                 <div class="card p-2">
                     <!-- Image with assetsUser appended to the path -->
-                    <img class="card-img-top main" src="{{ asset('upload/files/news/img-nt16745353edfecc.jpg') }}?{{ env('ASSETS_USER') }}"
+                    <img class="card-img-top main"
+                        src="{{ asset('upload/files/news/img-nt16745353edfecc.jpg') }}?{{ env('ASSETS_USER') }}"
                         alt="Card image cap">
                     <div class="card-body">
                         <p class="date">18 November 2024</p>
@@ -1194,7 +1190,8 @@
                 </div>
                 <div class="card p-2">
                     <!-- Image with assetsUser appended to the path -->
-                    <img class="card-img-top main" src="{{ asset('upload/files/news/img-dlh673aed06cdc09.jpg') }}?{{ env('ASSETS_USER') }}"
+                    <img class="card-img-top main"
+                        src="{{ asset('upload/files/news/img-dlh673aed06cdc09.jpg') }}?{{ env('ASSETS_USER') }}"
                         alt="Card image cap">
                     <div class="card-body">
                         <p class="date">15 November 2024</p>
@@ -1218,7 +1215,8 @@
                 </div>
                 <div class="card p-2">
                     <!-- Image with assetsUser appended to the path -->
-                    <img class="card-img-top main" src="{{ asset('upload/files/news/img-i8s6736ae81a7b52.jpg') }}?{{ env('ASSETS_USER') }}"
+                    <img class="card-img-top main"
+                        src="{{ asset('upload/files/news/img-i8s6736ae81a7b52.jpg') }}?{{ env('ASSETS_USER') }}"
                         alt="Card image cap">
                     <div class="card-body">
                         <p class="date">12 November 2024</p>
@@ -1241,7 +1239,8 @@
                 </div>
                 <div class="card p-2">
                     <!-- Image with assetsUser appended to the path -->
-                    <img class="card-img-top main" src="{{ asset('upload/files/news/img-aze67360fb69c94c.jpg') }}?{{ env('ASSETS_USER') }}"
+                    <img class="card-img-top main"
+                        src="{{ asset('upload/files/news/img-aze67360fb69c94c.jpg') }}?{{ env('ASSETS_USER') }}"
                         alt="Card image cap">
                     <div class="card-body">
                         <p class="date">09 November 2024</p>
@@ -1265,8 +1264,8 @@
                 </div>
             </div>
         </div>
-    </section> --}}
-    
+    </section>
+
 
     <section id="award-desktop">
         <div class="title align-items-center mb-4">
@@ -1277,27 +1276,33 @@
                 <div class="d-flex flex-row pe-5 g-4">
                     <div class="card border-0 w-100" style="height: 100px">
                         <img style="height: 100%;object-fit:contain"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/1.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                            src="{{ asset('themes/default/v2/assets/img/home/award/1.png') }}?{{ env('ASSETS_USER') }}"
+                            alt="">
                     </div>
                     <div class="card border-0 w-100" style="height: 100px">
                         <img style="height: 100%;object-fit:contain"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/2.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                            src="{{ asset('themes/default/v2/assets/img/home/award/2.png') }}?{{ env('ASSETS_USER') }}"
+                            alt="">
                     </div>
                     <div class="card border-0 w-100" style="height: 100px">
                         <img style="height: 100%;object-fit:contain"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/6.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                            src="{{ asset('themes/default/v2/assets/img/home/award/6.png') }}?{{ env('ASSETS_USER') }}"
+                            alt="">
                     </div>
                     <div class="card border-0 w-100" style="height: 100px">
                         <img style="height: 100%;object-fit:contain"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/4.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                            src="{{ asset('themes/default/v2/assets/img/home/award/4.png') }}?{{ env('ASSETS_USER') }}"
+                            alt="">
                     </div>
                     <div class="card border-0 w-100" style="height: 100px">
                         <img style="height: 100%;object-fit:contain"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/5.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                            src="{{ asset('themes/default/v2/assets/img/home/award/5.png') }}?{{ env('ASSETS_USER') }}"
+                            alt="">
                     </div>
                     <div class="card border-0 w-100" style="height: 100px">
                         <img style="height: 100%;object-fit:contain"
-                            src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/3.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                            src="{{ asset('themes/default/v2/assets/img/home/award/3.png') }}?{{ env('ASSETS_USER') }}"
+                            alt="">
                     </div>
                 </div>
             </div>
@@ -1308,42 +1313,54 @@
             </div>
         </div>
     </section>
-    
+
     <section id="award-mobile">
         <div class="container" style="gap: 0px;">
             <h1 class="fw-bold text-black text-center">PT. UNIAIR INDOTAMA CARGO</h1>
             <p class="text-center">awarded as the best PPJK company by Customs Main Services Office Tanjung Priok</p>
             <div class="row d-flex justify-content-evenly mb-4">
-                <div class="card border w-auto p-2" style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
+                <div class="card border w-auto p-2"
+                    style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
                     <img style="height: 100%;object-fit:contain; width: fit-content;"
-                        src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/1.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                        src="{{ asset('themes/default/v2/assets/img/home/award/1.png') }}?{{ env('ASSETS_USER') }}"
+                        alt="">
                 </div>
-                <div class="card border w-auto p-2" style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
+                <div class="card border w-auto p-2"
+                    style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
                     <img style="height: 100%;object-fit:contain; width: fit-content;"
-                        src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/2.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                        src="{{ asset('themes/default/v2/assets/img/home/award/2.png') }}?{{ env('ASSETS_USER') }}"
+                        alt="">
                 </div>
-                <div class="card border w-auto p-2" style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
+                <div class="card border w-auto p-2"
+                    style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
                     <img style="height: 100%;object-fit:contain; width: fit-content;"
-                        src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/6.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                        src="{{ asset('themes/default/v2/assets/img/home/award/6.png') }}?{{ env('ASSETS_USER') }}"
+                        alt="">
                 </div>
             </div>
             <div class="row d-flex justify-content-evenly">
-                <div class="card border w-auto p-2" style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
+                <div class="card border w-auto p-2"
+                    style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
                     <img style="height: 100%;object-fit:contain; width: fit-content;"
-                        src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/4.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                        src="{{ asset('themes/default/v2/assets/img/home/award/4.png') }}?{{ env('ASSETS_USER') }}"
+                        alt="">
                 </div>
-                <div class="card border w-auto p-2" style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
+                <div class="card border w-auto p-2"
+                    style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
                     <img style="height: 100%;object-fit:contain; width: fit-content;"
-                        src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/5.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                        src="{{ asset('themes/default/v2/assets/img/home/award/5.png') }}?{{ env('ASSETS_USER') }}"
+                        alt="">
                 </div>
-                <div class="card border w-auto p-2" style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
+                <div class="card border w-auto p-2"
+                    style="height: 90px; box-shadow: 10px 5px 20px rgba(192, 192, 192, 0.8);">
                     <img style="height: 100%;object-fit:contain; width: fit-content;"
-                        src="{{ asset('assetsUser/themes/default/v2/assets/img/home/award/3.png') }}?{{ env('ASSETS_USER') }}" alt="">
+                        src="{{ asset('themes/default/v2/assets/img/home/award/3.png') }}?{{ env('ASSETS_USER') }}"
+                        alt="">
                 </div>
             </div>
         </div>
     </section>
-    
+
 
 
 
@@ -1356,10 +1373,10 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-12 footer-contact">
                         <div class="dflex flex-direction-row">
-                            <img class="icon-logo" src="themes/default/v2/icon/icon/logo-uniair.png"
-                                alt="">
-                            <img class="icon-logo" src="themes/default/v2/icon/icon/logo-dimerco.png"
-                                alt="">
+                            <img class="icon-logo"
+                                src="{{ asset('themes/default/v2/icon/icon/logo-uniair.png') }}" alt="">
+                            <img class="icon-logo"
+                                src="{{ asset('themes/default/v2/icon/icon/logo-dimerco.png') }}" alt="">
                         </div>
 
                         <div class="detail">
@@ -1483,10 +1500,10 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-12 footer-contact">
                         <div class="dflex flex-direction-row">
-                            <img class="icon-logo" src="themes/default/v2/icon/icon/logo-uniair.png"
-                                alt="">
-                            <img class="icon-logo" src="themes/default/v2/icon/icon/logo-dimerco.png"
-                                alt="">
+                            <img class="icon-logo"
+                                src="{{ asset('themes/default/v2/icon/icon/logo-uniair.png') }}" alt="">
+                            <img class="icon-logo"
+                                src="{{ asset('themes/default/v2/icon/icon/logo-dimerco.png') }}" alt="">
                         </div>
 
                         <div class="col-lg-3 col-sm-6 col-12 footer-links">
@@ -1619,7 +1636,7 @@
         target="_blank">
         <div class="box"
             style="width: 72px;height:70px;border-radius:24px 24px 0px 24px;background: linear-gradient(180deg, #121C45 -22.77%, #FF5E14 251.91%);padding:12px">
-            <img src="themes/default/v2/icon/socialMedia/whatsapp2.png" alt=""
+            <img src="{{ asset('themes/default/v2/icon/socialMedia/whatsapp2.png') }}" alt=""
                 style="height: 100%;width:100%">
         </div>
     </a>
@@ -1630,30 +1647,39 @@
 
     <!-- Vendor JS Files -->
     <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/aos/aos.js"></script> -->
-    <script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/aos/aos.js') }}?{{ env('ASSETS_USER') }}"></script>
-<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}?{{ env('ASSETS_USER') }}"></script>
-<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/glightbox/js/glightbox.min.js"></script> -->
-<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/glightbox/js/glightbox.min.js') }}?{{ env('ASSETS_USER') }}"></script>
-<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
-<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}?{{ env('ASSETS_USER') }}"></script>
-<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/swiper/swiper-bundle.min.js"></script> -->
-<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/swiper/swiper-bundle.min.js') }}?{{ env('ASSETS_USER') }}"></script>
-<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/waypoints/noframework.waypoints.js"></script> -->
-<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/waypoints/noframework.waypoints.js') }}?{{ env('ASSETS_USER') }}"></script>
-<!-- <script src="https://www.uniaircargo.co.id/assets/vendor/php-email-form/validate.js"></script> -->
-<script src="{{ asset('assetsUser/themes/default/v2/assets/vendor/php-email-form/validate.js') }}?{{ env('ASSETS_USER') }}"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="{{ asset('themes/default/v2/assets/vendor/aos/aos.js') }}?{{ env('ASSETS_USER') }}"></script>
+    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script
+        src="{{ asset('themes/default/v2/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}?{{ env('ASSETS_USER') }}">
+    </script>
+    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/glightbox/js/glightbox.min.js"></script> -->
+    <script src="{{ asset('themes/default/v2/assets/vendor/glightbox/js/glightbox.min.js') }}?{{ env('ASSETS_USER') }}">
+    </script>
+    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+    <script
+        src="{{ asset('themes/default/v2/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}?{{ env('ASSETS_USER') }}">
+    </script>
+    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+    <script src="{{ asset('themes/default/v2/assets/vendor/swiper/swiper-bundle.min.js') }}?{{ env('ASSETS_USER') }}">
+    </script>
+    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/waypoints/noframework.waypoints.js"></script> -->
+    <script
+        src="{{ asset('themes/default/v2/assets/vendor/waypoints/noframework.waypoints.js') }}?{{ env('ASSETS_USER') }}">
+    </script>
+    <!-- <script src="https://www.uniaircargo.co.id/assets/vendor/php-email-form/validate.js"></script> -->
+    <script src="{{ asset('themes/default/v2/assets/vendor/php-email-form/validate.js') }}?{{ env('ASSETS_USER') }}">
+    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
-<!-- Make sure you put this AFTER Leaflet's CSS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="{{ asset('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js') }}" crossorigin=""></script>
 
-<!-- Template Main JS File -->
-<!-- <script src="https://www.uniaircargo.co.id/assets/js/main.js"></script> -->
-<script src="{{ asset('assetsUser/themes/default/v2/assets/js/main.js') }}?{{ env('ASSETS_USER') }}"></script>
+    <!-- Template Main JS File -->
+    <!-- <script src="https://www.uniaircargo.co.id/assets/js/main.js"></script> -->
+    <script src="{{ asset('themes/default/v2/assets/js/main.js') }}?{{ env('ASSETS_USER') }}"></script>
 
 
     <!--<script src="https://kit.fontawesome.com/95a745a1a3.js" crossorigin="anonymous"></script>-->

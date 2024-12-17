@@ -1,46 +1,72 @@
-@extends('backend.admin.layouts.app')
+@extends('admin.layout.app')
 
-@section('title', 'company_profile')
+@section('title', 'Company Profile')
 
 @section('content')
 
     <div class="col-lg-12">
         @if (session('success'))
-        <div class="alert alert-success">
-            {{session('success')}}
-        </div>
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
         @endif
         <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">company_profile</h5>
-            <div class="table-responsive">
-                <table class="table text-nowrap align-middle mb-0" id="company_profile">
-                    <thead>
-                        <tr class="border-2 border-bottom border-primary border-0">
-                                <th scope="col">No</th>
-                                <th scope="col">company_name</th>
-                                <th scope="col">logo</th>
-                                <th scope="col">visi_company</th>
-                                <th scope="col">misi_company</th>
-                                <th scope="col">history</th>
-                                <th scope="col">addres</th>
-                                <th scope="col">phone_company</th>
-                                <th scope="col">email_company</th>
-                                <th scope="col" class="text-center">Actions</th>
+            <div class="card-body">
+                <h5 class="card-title">Company Profile</h5>
+                <a href="{{ route('admin.CompanyProfile_create') }}" class="btn btn-primary btn-sm mb-3">Tambah</a>
+                <div class="table-responsive">
+                    <table class="table table-bordered text-nowrap align-middle mb-0" id="company_profile"
+                        style="table-layout: fixed;">
+                        <thead>
+                            <tr class="border-2 border-bottom border-primary border-0">
+                                <th style="width: 5%;">No</th>
+                                <th style="width: 15%;">Company Name</th>
+                                <th style="width: 10%;">Logo</th>
+                                <th style="width: 15%;">Visi Company</th>
+                                <th style="width: 15%;">Misi Company</th>
+                                <th style="width: 15%;">History</th>
+                                <th style="width: 20%;">Address</th>
+                                <th style="width: 10%;">Phone</th>
+                                <th style="width: 15%;">Email</th>
+                                <th class="text-center" style="width: 10%;">Actions</th>
                             </tr>
                         </thead>
                         <tbody class="table-group-divider">
                             @foreach ($CompanyProfiles as $CompanyProfile)
-                            <tr>
-                                <th scope="row">{{ $loop->iteration }}</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="text-center">
-                                    <a href="" class="btn btn-warning btn-sm">Edit</a>
-                                    <a href="" onclick="return confirm('Yakin ingin hapus data?')" class="btn btn-danger btn-sm">Delete</a>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <th scope="row">{{ $loop->iteration }}</th>
+                                    <td>
+                                        <div class="text-wrap">{{ $CompanyProfile->company_name }}</div>
+                                    </td>
+                                    <td>
+                                        <img src="{{ asset('storage/' .$CompanyProfile->logo) }}" alt="Logo" class="img-thumbnail"
+                                            style="max-width: 80px; height: auto;">
+                                    </td>
+                                    <td>
+                                        <div class="text-wrap">{{ $CompanyProfile->visi_company }}</div>
+                                    </td>
+                                    <td>
+                                        <div class="text-wrap">{{ $CompanyProfile->misi_company }}</div>
+                                    </td>
+                                    <td>
+                                        <div class="text-wrap scrollable-text">{{ $CompanyProfile->history }}</div>
+                                    </td>
+                                    <td>
+                                        <div class="text-wrap scrollable-text">{{ $CompanyProfile->addres }}</div>
+                                    </td>
+                                    <td>
+                                        <div class="text-wrap">{{ $CompanyProfile->phone_company }}</div>
+                                    </td>
+                                    <td>
+                                        <div class="text-wrap">{{ $CompanyProfile->email_company }}</div>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="" class="btn btn-warning btn-sm">Edit</a>
+                                        <br>
+                                        <a href="" onclick="return confirm('Yakin ingin hapus data?')"
+                                            class="btn btn-danger btn-sm">Delete</a>
+                                    </td>
+                                </tr>
                             @endforeach
                         </tbody>
                     </table>
@@ -51,8 +77,55 @@
 
     <script>
         $(document).ready(function() {
-            $('#company_profile').DataTable();
+            $('#company_profile').DataTable({
+                "paging": true,
+                "searching": true,
+                "lengthChange": false,
+                "info": false,
+                "autoWidth": false,
+            });
         });
     </script>
 
 @endsection
+
+<style>
+    .text-wrap {
+        white-space: normal;
+        word-wrap: break-word;
+        text-align: left;
+    }
+
+    /* Membatasi tinggi teks dan menambahkan scroll untuk kolom dengan banyak teks */
+    .scrollable-text {
+        max-height: 150px;
+        /* Membatasi tinggi kolom */
+        overflow-y: auto;
+        /* Menambahkan scroll jika teks melebihi batas */
+    }
+
+    /* Padding yang lebih konsisten untuk semua kolom */
+    td,
+    th {
+        padding: 12px;
+        /* Menambah padding untuk memberi jarak */
+        text-align: left;
+        /* Menyelaraskan teks ke kiri untuk keterbacaan */
+    }
+
+    /* Memastikan lebar kolom cukup untuk teks panjang dan logo */
+    td {
+        vertical-align: middle;
+    }
+
+    /* Agar kolom tidak terpotong, terutama kolom Address dan History */
+    .scrollable-text {
+        max-height: 150px;
+        overflow-y: auto;
+    }
+
+    /* Menambahkan border yang lebih jelas di bawah header */
+    th {
+        border-bottom: 2px solid #dee2e6;
+    }
+</style>

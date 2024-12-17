@@ -10,7 +10,7 @@ class UserLoginController extends Controller
 {
     public function login()
     {
-        return view('admin.login');
+        return view('Auth.AdminLogin');
     }
 
     public function submit(Request $request)
