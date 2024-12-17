@@ -5,9 +5,10 @@ use App\Http\Controllers\Auth\UserLoginController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('#', function () {
     return view('welcome');
 });
+Route::get('/', [UserController::class, 'UserDashboard'])->name('user.dashboard');
 
 Route::middleware(['guest'])->group(function(){
     Route::get('/admin/login',[UserLoginController::class, "login"])->name('admin.login');
@@ -28,4 +29,9 @@ Route::middleware(['role:admin'])->group(function () {
     // Route::put('/admin/profile/update', [UserController::class, 'update'])->name('admin.profile.update');
 
    
+});
+
+Route::middleware(['role:user'])->group(function () {
+   
+
 });

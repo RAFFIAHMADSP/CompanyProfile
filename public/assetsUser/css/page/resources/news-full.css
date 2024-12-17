@@ -1,0 +1,30 @@
+#category{
+
+    background-color: #F5F5F5;
+}
+
+@media(max-width:992px){
+
+    #category{
+
+        margin-bottom: 1rem !important;
+    }
+
+    #review-desktop{
+
+        display: none !important;
+    }
+
+    .blog{
+
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media(min-width:992px){
+    
+    #review-mobile{
+
+        display: none !important;
+    }
+}
