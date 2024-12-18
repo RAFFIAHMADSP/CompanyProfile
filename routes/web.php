@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('#', function () {
     return view('welcome');
 });
+Route::get('/', [UserController::class, 'UserDashboard'])->name('user.dashboard');
+
 
 Route::middleware(['guest'])->group(function(){
     Route::get('/admin/login',[UserLoginController::class, "login"])->name('admin.login');
@@ -29,9 +31,9 @@ Route::middleware(['role:admin'])->group(function () {
     Route::get('/admin/CompanyProfile', [CompanyProfileController::class, 'CompanyProfile'])->name('admin.CompanyProfile');
     Route::get('/admin/CompanyProfile/create', [CompanyProfileController::class, 'create'])->name('admin.CompanyProfile_create');
     Route::post('/admin/CompanyProfile/store', [CompanyProfileController::class, 'store'])->name('admin.CompanyProfile_store');
-    Route::get('/admin/CompanyProfile/edit{id_konser}', [CompanyProfileController::class, 'edit'])->name('konser_edit');
-    Route::put('/admin/CompanyProfile/edit{id_konser}', [CompanyProfileController::class, 'update'])->name('konser_update');
-    Route::get('/admin/CompanyProfile/delete/{id_konser}',[CompanyProfileController::class, "delete"])->name('konser_delete');
+    Route::get('/admin/CompanyProfile/edit{id_CompanyProfile}', [CompanyProfileController::class, 'edit'])->name('CompanyProfile_edit');
+    Route::put('/admin/CompanyProfile/edit{id_CompanyProfile}', [CompanyProfileController::class, 'update'])->name('CompanyProfile_update');
+    Route::get('/admin/CompanyProfile/delete/{id_CompanyProfile}',[CompanyProfileController::class, "delete"])->name('CompanyProfile_delete');
 
 
     // Route::get('/admin/profile', [UserController::class, 'profile'])->name('admin.profile');
@@ -39,7 +41,6 @@ Route::middleware(['role:admin'])->group(function () {
 });
 
 Route::middleware(['role:user'])->group(function () {
-    // Route::get('/', [UserController::class, 'UserDashboard'])->name('user.dashboard');
 
 
 });

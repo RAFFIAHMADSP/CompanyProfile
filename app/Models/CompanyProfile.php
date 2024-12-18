@@ -10,7 +10,7 @@ class CompanyProfile extends Model
     protected $primaryKey = 'id_company';
 
     protected $fillable = [
-        'Company_name',
+        'company_name',
         'logo',
         'visi_company',
         'misi_company',
