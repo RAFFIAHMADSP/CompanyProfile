@@ -616,7 +616,7 @@
   <script src="{{asset('assetsUser/vendor/aos/aos.js')}}"></script>
   <script src="{{asset('assetsUser/vendor/swiper/swiper-bundle.min.js')}}"></script>
   <script src="{{asset('assetsUser/vendor/glightbox/js/glightbox.min.js')}}"></script>
-  <script src="{{asset9'assetsUser/vendor/imagesloaded/imagesloaded.pkgd.min.js')}}"></script>
+  <script src="{{asset('assetsUser/vendor/imagesloaded/imagesloaded.pkgd.min.js')}}"></script>
   <script src="{{asset('assetsUser/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
   <script src="{{asset('assetsUser/vendor/purecounter/purecounter_vanilla.js')}}"></script>
 
