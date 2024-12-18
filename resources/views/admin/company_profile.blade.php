@@ -43,10 +43,10 @@
                                             style="max-width: 80px; height: auto;">
                                     </td>
                                     <td>
-                                        <div class="text-wrap">{{ $CompanyProfile->visi_company }}</div>
+                                        <div class="text-wrap scrollable-text">{{ $CompanyProfile->visi_company }}</div>
                                     </td>
                                     <td>
-                                        <div class="text-wrap">{{ $CompanyProfile->misi_company }}</div>
+                                        <div class="text-wrap scrollable-text">{{ $CompanyProfile->misi_company }}</div>
                                     </td>
                                     <td>
                                         <div class="text-wrap scrollable-text">{{ $CompanyProfile->history }}</div>
@@ -61,9 +61,9 @@
                                         <div class="text-wrap">{{ $CompanyProfile->email_company }}</div>
                                     </td>
                                     <td class="text-center">
-                                        <a href="" class="btn btn-warning btn-sm">Edit</a>
+                                        <a href="{{ route('CompanyProfile_edit', $CompanyProfile->id_company) }}" class="btn btn-warning btn-sm">Edit</a>
                                         <br>
-                                        <a href="" onclick="return confirm('Yakin ingin hapus data?')"
+                                        <a href="{{ route('CompanyProfile_delete', $CompanyProfile->id_company) }}" onclick="return confirm('Yakin ingin hapus data?')"
                                             class="btn btn-danger btn-sm">Delete</a>
                                     </td>
                                 </tr>

@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('#', function () {
     return view('welcome');
 });
+Route::get('/', [UserController::class, 'UserDashboard'])->name('user.dashboard');
+
 
 Route::middleware(['guest'])->group(function(){
     Route::get('/admin/login',[UserLoginController::class, "login"])->name('admin.login');
@@ -81,7 +83,6 @@ Route::middleware(['role:admin'])->group(function () {
 });
 
 Route::middleware(['role:user'])->group(function () {
-    // Route::get('/', [UserController::class, 'UserDashboard'])->name('user.dashboard');
 
 
 });
