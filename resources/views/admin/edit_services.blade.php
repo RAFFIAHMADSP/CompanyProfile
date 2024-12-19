@@ -1,6 +1,6 @@
 @extends('admin.layout.app')
 
-@section('tittle', 'edit services')
+@section('title', 'edit services')
 
 @section('content')
 <div class="row g-4">
@@ -23,7 +23,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="description_services" class="form-label">Descriptions</label>
-                            <input type="Text" class="form-control" id="description_services" name="description_services"  value="{{ old('judul_services', $services->description_services) }}">
+                            <input type="Text" class="form-control" id="description_services" name="description_services"  value="{{ old('description_services', $services->description_services) }}">
                             <div class="text-danger">
                                 @error('description_services')
                                     {{ $message }}

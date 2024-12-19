@@ -1,6 +1,6 @@
 @extends('admin.layout.app')
 
-@section('tittle', 'Tambah Company Profile')
+@section('title', 'Tambah Company Profile')
 
 @section('content')
 <div class="row g-4">

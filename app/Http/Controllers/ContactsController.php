@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 class ContactsController extends Controller
 {
     public function Contacts() {
-        $Contactss = contacts::all();
-        return view('admin.contacts', compact('Contactss'));
+        $Contacts = contacts::all();
+        return view('admin.contacts', compact('Contacts'));
     }
 
     public Function create() {

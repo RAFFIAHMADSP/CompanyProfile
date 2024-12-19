@@ -1,6 +1,6 @@
 @extends('admin.layout.app')
 
-@section('title', 'Company Profile')
+@section('title', 'Services')
 
 @section('content')
 
@@ -12,7 +12,7 @@
         @endif
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Company Profile</h5>
+                <h5 class="card-title">Services</h5>
                 <a href="{{ route('admin.Services_create') }}" class="btn btn-primary btn-sm mb-3">Tambah</a>
                 <div class="table-responsive">
                     <table class="table table-bordered text-nowrap align-middle mb-0" id="company_profile"

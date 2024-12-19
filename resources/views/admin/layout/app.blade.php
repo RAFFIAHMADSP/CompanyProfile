@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('/assets/img/apple-icon.png') }}">
     <link rel="icon" type="image/png" href="{{ asset('/assets/img/favicon.png') }}">
     <title>
-       @yield('tittle')
+       @yield('title')
     </title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css"
@@ -58,21 +58,27 @@
                         <span class="nav-link-text ms-1">Services</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active bg-gradient-dark text-white" href="{{ route('admin.Galleries') }}">
+                        <i class="material-symbols-rounded opacity-5">dashboard</i>
+                        <span class="nav-link-text ms-1">Galeries</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active bg-gradient-dark text-white" href="{{ route('admin.Contacts') }}">
+                        <i class="material-symbols-rounded opacity-5">dashboard</i>
+                        <span class="nav-link-text ms-1">contact</span>
+                    </a>
+                </li>
 
                 <li class="nav-item mt-3">
                     <h6 class="ps-4 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">Account pages
                     </h6>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="">
+                    <a class="nav-link text-dark" href="{{ route('admin.profile') }}">
                         <i class="material-symbols-rounded opacity-5">person</i>
                         <span class="nav-link-text ms-1">Profile</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="">
-                        <i class="material-symbols-rounded opacity-5">login</i>
-                        <span class="nav-link-text ms-1">Sign In</span>
                     </a>
                 </li>
                 <li class="nav-item">

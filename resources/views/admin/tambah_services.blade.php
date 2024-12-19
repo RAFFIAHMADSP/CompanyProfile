@@ -1,6 +1,6 @@
 @extends('admin.layout.app')
 
-@section('tittle', 'tambah services')
+@section('title', 'tambah services')
 
 @section('content')
 <div class="row g-4">
@@ -9,7 +9,7 @@
             <h6 class="mb-4">SERVICES</h6>
             <div class="card">
                 <div class="card-body">
-                    <form action="{{route('admin.Services_store', $services->id_services)}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{route('admin.Services_store')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
                             <label for="judul_services" class="form-label">Services name</label>
