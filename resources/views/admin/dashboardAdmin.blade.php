@@ -1,6 +1,6 @@
 @extends('admin.layout.app')
 
-@section('tittle', 'Dashboard')
+@section('title', 'Dashboard')
 
 @section('content')
     <div class="card-body px-0 pb-2">

@@ -12,7 +12,6 @@ class galleries extends Model
     protected $fillable = [
         'title',
         'image',
-        'file_url',
-        'descriptions', 
+        'descriptions',
     ];
 }

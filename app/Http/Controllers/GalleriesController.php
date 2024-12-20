@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\Storage;
 class GalleriesController extends Controller
 {
     public function Galleries() {
-        $Galleriess = Galleries::all();
-        return view('admin.galleries', compact('Galleriess'));
+        $Galleries = Galleries::all();
+        return view('admin.galleries', compact('Galleries'));
     }
 
     public Function create() {
@@ -22,7 +22,6 @@ class GalleriesController extends Controller
         $request->validate([
             'title' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
-            'file_url' => 'required',
             'descriptions' => 'required',
         ]);
 
@@ -41,7 +40,6 @@ class GalleriesController extends Controller
         Galleries::create([
             'title' => $request->title,
             'image' => $image,
-            'file_url' => $request->file_url,
             'descriptions' => $request->descriptions,
         ]);
         return redirect()->route('admin.Galleries')->with('success', 'Data Galleries berhasil ditambahkan!');
@@ -60,7 +58,6 @@ class GalleriesController extends Controller
         $request->validate([
             'title' => 'nullable',
             'image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
-            'file_url' => 'nullable',
             'descriptions' => 'nullable',
         ]);
 
@@ -78,11 +75,10 @@ class GalleriesController extends Controller
         $Galleries->update([
             'title' => $request->title,
             'image' => $image,
-            'file_url' => $request->file_url,
             'descriptions' => $request->descriptions,
         ]);
 
-        return redirect()->route('admin.Gall$Galleries', $id_galleries)->with('succsess',' Data siswa berhasil diupdate');
+        return redirect()->route('admin.Galleries', $id_galleries)->with('succsess',' Data galleries berhasil diupdate');
     }
 
     public function delete($id_galleries){
