@@ -12,7 +12,7 @@
                     <form action="{{route('admin.CompanyProfile_store')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
-                            <label for="company_name" class="form-label">Company name</label>
+                            <label for="company_name" class="form-label">Company Name</label>
                             <input type="text" class="form-control" id="company_name" name="company_name" >
                             <div class="text-danger">
                                 @error('company_name')
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="logo" class="form-label">logo</label>
+                            <label for="logo" class="form-label">Logo</label>
                             <input type="file" class="form-control" id="logo" name="logo" >
                             <div class="text-danger">
                                 @error('logo')
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="addres" class="form-label">addres</label>
+                            <label for="addres" class="form-label">Address</label>
                             <input type="text" class="form-control" id="addres" name="addres" >
                             <div class="text-danger">
                                 @error('addres')
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="phone_company" class="form-label">phone_company</label>
+                            <label for="phone_company" class="form-label">Phone Company</label>
                             <input type="number" class="form-control" id="phone_company" name="phone_company">
                             <div class="text-danger">
                                 @error('phone_company')
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="email_company" class="form-label">email_company</label>
+                            <label for="email_company" class="form-label">Email Company</label>
                             <input type="email" class="form-control" id="email_company" name="email_company">
                             <div class="text-danger">
                                 @error('email_company')
