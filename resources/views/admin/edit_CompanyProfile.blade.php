@@ -23,6 +23,16 @@
                             </div>
                         </div>
                         <div class="mb-3">
+                            <label for="tagline" class="form-label">Tagline</label>
+                            <input type="text" class="form-control" id="tagline" name="tagline"
+                                value="{{ old('tagline', $CompanyProfile->tagline) }}">
+                            <div class="text-danger">
+                                @error('tagline')
+                                {{ $message }}
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="mb-3">
                             <label for="logo" class="form-label">Logo</label>
                             <input type="file" class="form-control" id="logo" name="logo"
                                 value="{{ old('logo', $CompanyProfile->logo) }}">
@@ -36,8 +46,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="visi_company" class="form-label">Visi</label>
-                            <input type="text" class="form-control" id="visi_company" name="visi_company"
-                                value="{{ old('visi_company', $CompanyProfile->visi_company) }}">
+                            <textarea class="form-control" id="visi_company" name="visi_company">{{ old('visi_company', $CompanyProfile->visi_company) }}</textarea>
                             <div class="text-danger">
                                 @error('visi_company')
                                 {{ $message }}
@@ -46,8 +55,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="misi_company" class="form-label">Misi</label>
-                            <input type="text" class="form-control" id="misi_company" name="misi_company"
-                                value="{{ old('misi_company', $CompanyProfile->misi_company) }}">
+                            <textarea class="form-control" id="misi_company" name="misi_company">{{ old('misi_company', $CompanyProfile->misi_company) }}</textarea>
                             <div class="text-danger">
                                 @error('misi_company')
                                 {{ $message }}
@@ -56,8 +64,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="history" class="form-label">History</label>
-                            <input type="text" class="form-control" id="history" name="history"
-                                value="{{ old('history', $CompanyProfile->history) }}">
+                            <textarea class="form-control" id="history" name="history">{{ old('history', $CompanyProfile->history) }}</textarea>
                             <div class="text-danger">
                                 @error('history')
                                 {{ $message }}
@@ -66,8 +73,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="addres" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="addres" name="addres"
-                                value="{{ old('addres', $CompanyProfile->addres) }}">
+                            <textarea class="form-control" id="addres" name="addres">{{ old('addres', $CompanyProfile->addres) }}</textarea>
                             <div class="text-danger">
                                 @error('addres')
                                 {{ $message }}

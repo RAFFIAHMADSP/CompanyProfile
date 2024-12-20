@@ -21,6 +21,15 @@
                             </div>
                         </div>
                         <div class="mb-3">
+                            <label for="tagline" class="form-label">Tagline</label>
+                            <input type="text" class="form-control" id="tagline" name="tagline" >
+                            <div class="text-danger">
+                                @error('tagline')
+                                    {{ $message }}
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="mb-3">
                             <label for="logo" class="form-label">Logo</label>
                             <input type="file" class="form-control" id="logo" name="logo" >
                             <div class="text-danger">
@@ -31,7 +40,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="visi_company" class="form-label">Visi</label>
-                            <input type="text" class="form-control" id="visi_company" name="visi_company" >
+                            <textarea class="form-control" id="visi_company" name="visi_company"></textarea>
                             <div class="text-danger">
                                 @error('visi_company')
                                     {{ $message }}
@@ -40,7 +49,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="misi_company" class="form-label">Misi</label>
-                            <input type="text" class="form-control" id="misi_company" name="misi_company">
+                            <textarea class="form-control" id="misi_company" name="misi_company"></textarea>
                             <div class="text-danger">
                                 @error('misi_company')
                                     {{ $message }}
@@ -49,7 +58,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="history" class="form-label">History</label>
-                            <input type="text" class="form-control" id="history" name="history" >
+                            <textarea class="form-control" id="history" name="history"></textarea>
                             <div class="text-danger">
                                 @error('history')
                                     {{ $message }}
@@ -58,7 +67,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="addres" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="addres" name="addres" >
+                            <textarea class="form-control" id="addres" name="addres"></textarea>
                             <div class="text-danger">
                                 @error('addres')
                                     {{ $message }}

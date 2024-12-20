@@ -19,24 +19,29 @@
                         style="table-layout: fixed;">
                         <thead>
                             <tr class="border-2 border-bottom border-primary border-0">
-                                <th style="width: 5%;">No</th>
-                                <th style="width: 15%;">Company Name</th>
-                                <th style="width: 10%;">Logo</th>
-                                <th style="width: 15%;">Visi Company</th>
-                                <th style="width: 15%;">Misi Company</th>
-                                <th style="width: 15%;">History</th>
-                                <th style="width: 20%;">Address</th>
-                                <th style="width: 10%;">Phone</th>
-                                <th style="width: 15%;">Email</th>
-                                <th class="text-center" style="width: 10%;">Actions</th>
+                                <th style="text-align: left;">No</th>
+                                <th style="text-align: left;">Company</th>
+                                <th style="text-align: left;">Tagline</th>
+                                <th style="text-align: left;">Logo</th>
+                                <th style="text-align: left;">Visi </th>
+                                <th style="text-align: left;">Misi </th>
+                                <th style="text-align: left;">History</th>
+                                <th style="text-align: left;">Address</th>
+                                <th style="text-align: left;">Phone</th>
+                                <th style="text-align: left;">Email</th>
+                                <th class="text-center" style="text-align: left;">Actions</th>
                             </tr>
                         </thead>
+
                         <tbody class="table-group-divider">
                             @foreach ($CompanyProfiles as $CompanyProfile)
                                 <tr>
                                     <th scope="row">{{ $loop->iteration }}</th>
                                     <td>
                                         <div class="text-wrap">{{ $CompanyProfile->company_name }}</div>
+                                    </td>
+                                    <td>
+                                        <div class="text-wrap">{{ $CompanyProfile->tagline }}</div>
                                     </td>
                                     <td>
                                         <img src="{{ asset('storage/' .$CompanyProfile->logo) }}" alt="Logo" class="img-thumbnail"

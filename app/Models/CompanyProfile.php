@@ -11,6 +11,7 @@ class CompanyProfile extends Model
 
     protected $fillable = [
         'company_name',
+        'tagline',
         'logo',
         'visi_company',
         'misi_company',

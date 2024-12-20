@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Gp Bootstrap Template</title>
+    <title>{{ $companyProfile->company_name }}</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -71,7 +71,7 @@
 
             <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assetsUser/img/logo.png" alt=""> -->
+                {{-- <img src="{{asset('assetsUser/img/loggo.png')}}" alt=""> --}}
                 <h1 class="sitename">{{ $companyProfile->company_name }}</h1>
                 <span>.</span>
             </a>
@@ -100,8 +100,7 @@
 
                 <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
                     <div class="col-xl-6 col-lg-8">
-                        <h2>Powerful Digital Solutions With GP<span>.</span></h2>
-                        <p>We are team of talented digital marketers</p>
+                        <h2>{{ $companyProfile->tagline }}<span>.</span></h2>
                     </div>
 
 
@@ -119,26 +118,18 @@
                         <img src="{{ asset('assetsUser/img/about.jpg') }}" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 order-2 order-lg-1 content">
-                        <h3>Voluptatem dignissimos provident</h3>
+                        <h3>ABOUT</h3>
                         <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.
+                            Nusantara Link Trade adalah perusahaan ekspor yang memperkenalkan produk unggulan Indonesia
+                            ke pasar internasional. Dengan layanan profesional berbasis teknologi, kami membawa
+                            keunggulan produk Nusantara secara global.
                         </p>
                         <ul>
-                            <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</span></li>
-                            <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in
-                                    voluptate velit.</span></li>
-                            <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
-                                    storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>{{ $companyProfile->visi_company }}</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>{{ $companyProfile->misi_company }}</span></li>
                         </ul>
                         <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident
+                            {{ $companyProfile->history }}
                         </p>
                     </div>
                 </div>
@@ -320,7 +311,8 @@
                             <a href="service-details.html" class="stretched-link">
                                 <h3>Pengiriman Udara</h3>
                             </a>
-                            <p>Pengiriman cepat dengan menggunakan pesawat untuk memastikan barang sampai dengan waktu yang lebih singkat.</p>
+                            <p>Pengiriman cepat dengan menggunakan pesawat untuk memastikan barang sampai dengan waktu
+                                yang lebih singkat.</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -334,7 +326,8 @@
                             <a href="service-details.html" class="stretched-link">
                                 <h3>Pengiriman Laut</h3>
                             </a>
-                            <p>Pengiriman barang menggunakan kapal laut untuk volume besar dengan biaya yang lebih efisien dan ramah lingkungan.</p>
+                            <p>Pengiriman barang menggunakan kapal laut untuk volume besar dengan biaya yang lebih
+                                efisien dan ramah lingkungan.</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -349,7 +342,7 @@
         <!-- Call To Action Section -->
         <section id="call-to-action" class="call-to-action section dark-background">
 
-            <img src="assetsUser/img/cta-bg.jpg" alt="">
+            <img src="{{asset('assetsUser/img/wallpaperflare.com_wallpaper (4).jpg')}}" alt="">
 
             <div class="container">
                 <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
@@ -384,7 +377,7 @@
                     <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <img src="{{ asset('assetsUser/img/masonry-portfolio/masonry-portfolio-1.jpg') }}"
+                            <img src="{{ asset('assetsUser/img/masonry-portfolio/pengiriman-cargo.jpg') }}"
                                 class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>App 1</h4>
