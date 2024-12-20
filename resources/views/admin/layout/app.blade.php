@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('/assets/img/apple-icon.png') }}">
     <link rel="icon" type="image/png" href="{{ asset('/assets/img/favicon.png') }}">
     <title>
-       @yield('title')
+        @yield('title')
     </title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css"
@@ -20,8 +20,13 @@
     <!-- Material Icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <!-- CSS Files -->
     <link id="pagestyle" href="{{ asset('/assets/css/material-dashboard.css?v=3.2.0') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
+
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
@@ -41,49 +46,47 @@
         <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active bg-gradient-dark text-white" href="{{ route('admin.dashboard') }}">
-                        <i class="material-symbols-rounded opacity-5">dashboard</i>
+                    <a class="nav-link {{ request()->routeIs('admin.dashboard') ? 'active bg-gradient-dark text-white' : 'text-dark' }}" href="{{ route('admin.dashboard') }}">
+                        <i class="material-symbols-rounded opacity-5 {{ request()->routeIs('admin.dashboard') ? 'text-white' : 'text-dark' }}">dashboard</i>
                         <span class="nav-link-text ms-1">Dashboard</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active bg-gradient-dark text-white" href="{{ route('admin.CompanyProfile') }}">
-                        <i class="material-symbols-rounded opacity-5">dashboard</i>
+                    <a class="nav-link {{ request()->routeIs('admin.CompanyProfile') ? 'active bg-gradient-dark text-white' : 'text-dark' }}" href="{{ route('admin.CompanyProfile') }}">
+                        <i class="material-symbols-rounded opacity-5 {{ request()->routeIs('admin.CompanyProfile') ? 'text-white' : 'text-dark' }}">corporate_fare</i>
                         <span class="nav-link-text ms-1">Company Profile</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active bg-gradient-dark text-white" href="{{ route('admin.Services') }}">
-                        <i class="material-symbols-rounded opacity-5">dashboard</i>
+                    <a class="nav-link {{ request()->routeIs('admin.Services') ? 'active bg-gradient-dark text-white' : 'text-dark' }}" href="{{ route('admin.Services') }}">
+                        <i class="material-symbols-rounded opacity-5 {{ request()->routeIs('admin.Services') ? 'text-white' : 'text-dark' }}">build</i>
                         <span class="nav-link-text ms-1">Services</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active bg-gradient-dark text-white" href="{{ route('admin.Galleries') }}">
-                        <i class="material-symbols-rounded opacity-5">dashboard</i>
-                        <span class="nav-link-text ms-1">Galeries</span>
+                    <a class="nav-link {{ request()->routeIs('admin.Galleries') ? 'active bg-gradient-dark text-white' : 'text-dark' }}" href="{{ route('admin.Galleries') }}">
+                        <i class="material-symbols-rounded opacity-5 {{ request()->routeIs('admin.Galleries') ? 'text-white' : 'text-dark' }}">photo_library</i>
+                        <span class="nav-link-text ms-1">Galleries</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active bg-gradient-dark text-white" href="{{ route('admin.Contacts') }}">
-                        <i class="material-symbols-rounded opacity-5">dashboard</i>
-                        <span class="nav-link-text ms-1">contact</span>
+                    <a class="nav-link {{ request()->routeIs('admin.Contacts') ? 'active bg-gradient-dark text-white' : 'text-dark' }}" href="{{ route('admin.Contacts') }}">
+                        <i class="material-symbols-rounded opacity-5 {{ request()->routeIs('admin.Contacts') ? 'text-white' : 'text-dark' }}">contact_mail</i>
+                        <span class="nav-link-text ms-1">Contact</span>
                     </a>
                 </li>
-
                 <li class="nav-item mt-3">
-                    <h6 class="ps-4 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">Account pages
-                    </h6>
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">Account pages</h6>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="{{ route('admin.profile') }}">
-                        <i class="material-symbols-rounded opacity-5">person</i>
+                    <a class="nav-link {{ request()->routeIs('admin.profile') ? 'active bg-gradient-dark text-white' : 'text-dark' }}" href="{{ route('admin.profile') }}">
+                        <i class="material-symbols-rounded opacity-5 {{ request()->routeIs('admin.profile') ? 'text-white' : 'text-dark' }}">person</i>
                         <span class="nav-link-text ms-1">Profile</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="{{ route('admin.logout') }}">
-                        <i class="material-symbols-rounded opacity-5">logout</i>
+                    <a class="nav-link {{ request()->routeIs('admin.logout') ? 'active bg-gradient-dark text-white' : 'text-dark' }}" href="{{ route('admin.logout') }}">
+                        <i class="material-symbols-rounded opacity-5 {{ request()->routeIs('admin.logout') ? 'text-white' : 'text-dark' }}">logout</i>
                         <span class="nav-link-text ms-1">Logout</span>
                     </a>
                 </li>
@@ -590,6 +593,8 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="../assets/js/material-dashboard.min.js?v=3.2.0"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
 </body>
 
 </html>

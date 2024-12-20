@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CompanyProfile;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -35,7 +36,8 @@ class UserController extends Controller
 
     // USER
     public function UserDashboard() {
-        return view('user.index');
+        $companyProfile = CompanyProfile::first();
+        return view('user.index', compact('companyProfile'));
     }
     // USER END
 }
