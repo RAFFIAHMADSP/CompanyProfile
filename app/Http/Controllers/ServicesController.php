@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CompanyProfile;
 use App\Models\services;
 use Illuminate\Http\Request;
 
@@ -58,6 +59,22 @@ class ServicesController extends Controller
 
         return redirect()->back()->with('success', 'Data services berhasil dihapus.');
     }
+
+
+    // User
+
+    public function airServices() {
+        $companyProfile = CompanyProfile::all();
+        return view('user.air_services', compact('companyProfile'));
+    }
+
+    // public function listrikServices() {
+    //     return view('user.listrik_services');
+    // }
+
+    // public function gasServices() {
+    //     return view('user.gas_services');
+    // }
 
 
 }

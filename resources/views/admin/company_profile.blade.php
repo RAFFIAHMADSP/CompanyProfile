@@ -21,6 +21,7 @@
                             <tr class="border-2 border-bottom border-primary border-0">
                                 <th style="text-align: left;">No</th>
                                 <th style="text-align: left;">Company</th>
+                                <th style="text-align: left;">About</th>
                                 <th style="text-align: left;">Tagline</th>
                                 <th style="text-align: left;">Logo</th>
                                 <th style="text-align: left;">Visi </th>
@@ -39,6 +40,9 @@
                                     <th scope="row">{{ $loop->iteration }}</th>
                                     <td>
                                         <div class="text-wrap">{{ $CompanyProfile->company_name }}</div>
+                                    </td>
+                                    <td>
+                                        <div class="text-wrap">{{ $CompanyProfile->about }}</div>
                                     </td>
                                     <td>
                                         <div class="text-wrap">{{ $CompanyProfile->tagline }}</div>

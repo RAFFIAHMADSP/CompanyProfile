@@ -21,6 +21,15 @@
                             </div>
                         </div>
                         <div class="mb-3">
+                            <label for="about" class="form-label">About</label>
+                            <input type="text" class="form-control" id="about" name="about" >
+                            <div class="text-danger">
+                                @error('about')
+                                    {{ $message }}
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="mb-3">
                             <label for="tagline" class="form-label">Tagline</label>
                             <input type="text" class="form-control" id="tagline" name="tagline" >
                             <div class="text-danger">

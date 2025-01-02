@@ -23,7 +23,6 @@
                                 <th style="width: 10%;">email</th>
                                 <th style="width: 10%;">subject</th>
                                 <th style="width: 10%;">message</th>
-                                <th class="text-center" style="width: 10%;">Actions</th>
                             </tr>
                         </thead>
                         <tbody class="table-group-divider">

@@ -22,6 +22,7 @@ class CompanyProfileController extends Controller
     public function store(Request $request){
         $request->validate([
             'company_name' => 'required',
+            'about' => 'required',
             'tagline' => 'required',
             'logo' => 'required|image|mimes:jpeg,png,jpg|max:2048',
             'visi_company' => 'required',
@@ -46,6 +47,7 @@ class CompanyProfileController extends Controller
 
         CompanyProfile::create([
             'company_name' => $request->company_name,
+            'about' => $request->about,
             'tagline' => $request->tagline,
             'logo' => $logo,
             'visi_company' => $request->visi_company,
@@ -70,6 +72,7 @@ class CompanyProfileController extends Controller
 
         $request->validate([
             'company_name' => 'nullable',
+            'about' => 'nullable',
             'tagline' => 'nullable',
             'logo' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
             'visi_company' => 'nullable',
@@ -93,6 +96,7 @@ class CompanyProfileController extends Controller
 
         $CompanyProfile->update([
             'company_name' => $request->company_name,
+            'about' => $request->about,
             'tagline' => $request->tagline,
             'logo' => $logo,
             'visi_company' => $request->visi_company,

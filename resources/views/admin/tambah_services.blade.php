@@ -22,7 +22,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="description_services" class="form-label">Descriptions</label>
-                            <input type="Text" class="form-control" id="description_services" name="description_services" >
+                            <textarea class="form-control" name="description_services" id="description_services" cols="30" rows="10"></textarea>
                             <div class="text-danger">
                                 @error('description_services')
                                     {{ $message }}

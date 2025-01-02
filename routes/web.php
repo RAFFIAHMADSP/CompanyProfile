@@ -15,6 +15,8 @@ Route::get('#', function () {
     return view('welcome');
 });
 Route::get('/', [UserController::class, 'UserDashboard'])->name('user.dashboard');
+Route::get('/user/air_services', [ServicesController::class, 'airServices'])->name('air_services');
+
 
 
 Route::middleware(['guest'])->group(function(){
@@ -70,5 +72,6 @@ Route::middleware(['role:admin'])->group(function () {
 
 
     Route::get('/admin/profile', [UserController::class, 'profile'])->name('admin.profile');
-    // Route::put('/admin/profile/update', [UserController::class, 'update'])->name('admin.profile.update');
+    Route::get('/admin/profile/view/update', [UserController::class, 'profileViewUpdate'])->name('admin.profile.view.update');
+    Route::put('/admin/profile/update', [UserController::class, 'updateProfile'])->name('admin.profile.update');
 });

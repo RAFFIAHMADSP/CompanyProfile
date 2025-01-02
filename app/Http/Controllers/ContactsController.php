@@ -31,7 +31,7 @@ class ContactsController extends Controller
             'subject' => $request->subject,
             'message' => $request->message,
         ]);
-        return redirect()->route('admin.Contacts')->with('success', 'Data Contacts berhasil ditambahkan!');
+        return redirect()->route('user.dashboard')->with('success', 'Data Contacts berhasil ditambahkan!');
     }
 
     public function edit($id_company) {
