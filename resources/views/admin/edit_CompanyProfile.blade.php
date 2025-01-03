@@ -24,8 +24,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="about" class="form-label">About</label>
-                            <input type="text" class="form-control" id="about" name="about"
-                                value="{{ old('about', $CompanyProfile->about) }}">
+                            <textarea class="form-control" name="about" id="about" cols="30" rows="10">{{ old('about', $CompanyProfile->about) }}"</textarea>
                             <div class="text-danger">
                                 @error('about')
                                 {{ $message }}

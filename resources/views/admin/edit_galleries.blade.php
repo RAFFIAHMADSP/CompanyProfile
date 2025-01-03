@@ -26,8 +26,8 @@
                             <div class="mb-3">
                                 <label for="image" class="form-label">image</label>
                                 <input type="file" class="form-control" id="image" name="image">
-                                <div class="mb-2"> <img src="{{ asset('storage/' . $Galleries->image) }}"
-                                        alt="" height="50"></div>
+                                <div class="mb-2"> <img src="{{ asset('storage/' . $Galleries->image) }}" alt=""
+                                        height="50"></div>
                                 <div class="text-danger">
                                     @error('image')
                                         {{ $message }}
@@ -36,8 +36,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="descriptions" class="form-label">Descriptions</label>
-                                <input type="Text" class="form-control" id="descriptions" name="descriptions"
-                                value="{{ old('descriptions', $Galleries->descriptions) }}">
+                                <textarea class="form-control" name="descriptions" id=" descriptions" cols="30" rows="10">{{ old('descriptions', $Galleries->descriptions) }}"</textarea>
                                 <div class="text-danger">
                                     @error('descriptions')
                                         {{ $message }}

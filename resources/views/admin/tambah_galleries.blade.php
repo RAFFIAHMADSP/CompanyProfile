@@ -31,6 +31,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="descriptions" class="form-label">Descriptions</label>
+                            <textarea class="form-control" name="descriptions" id=" descriptions" cols="30" rows="10"></textarea>
                             <input type="Text" class="form-control" id="descriptions" name="descriptions" >
                             <div class="text-danger">
                                 @error('descriptions')

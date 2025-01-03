@@ -22,6 +22,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="about" class="form-label">About</label>
+                            <textarea class="form-control" name="about" id="about" cols="30" rows="10"></textarea>
                             <input type="text" class="form-control" id="about" name="about" >
                             <div class="text-danger">
                                 @error('about')

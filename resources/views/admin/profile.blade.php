@@ -37,10 +37,6 @@
                         <div class="card card-plain h-100">
                             <div class="card-header pb-0 p-3">
                                 <div class="row">
-                                    <h6 class="d-inline-flex align-items-center">
-                                        Edit Profile
-                                    </h6>
-
                                     <div class="col-md-4 text-end">
                                         <a href="javascript:;">
                                             <i class="fas fa-user-edit text-secondary text-sm" data-bs-toggle="tooltip"

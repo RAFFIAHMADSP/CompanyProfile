@@ -316,8 +316,8 @@
                                 <img src="{{ asset('storage/' . $galleri->image) }}" class="img-fluid"
                                     alt="" style="width: 500px; height: 250px; object-fit: cover;">
                                 <div class="portfolio-info">
-                                    <h4>App 1</h4>
-                                    <p>Lorem ipsum, dolor sit</p>
+                                    <h4>{{ $galleri->title }}</h4>
+                                    <p>{{ $galleri->descriptions }}</p>
                                     <a href="{{ asset('storage/' . $galleri->image) }}" title="App 1"
                                         data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
