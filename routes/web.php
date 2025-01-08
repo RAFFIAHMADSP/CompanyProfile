@@ -15,9 +15,6 @@ Route::get('#', function () {
     return view('welcome');
 });
 Route::get('/', [UserController::class, 'UserDashboard'])->name('user.dashboard');
-Route::get('/user/air_services', [ServicesController::class, 'airServices'])->name('air_services');
-
-
 
 Route::middleware(['guest'])->group(function(){
     Route::get('/admin/login',[UserLoginController::class, "login"])->name('admin.login');
