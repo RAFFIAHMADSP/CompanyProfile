@@ -13,73 +13,77 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Company Profile</h5>
-                <a href="{{ route('admin.CompanyProfile_create') }}" class="btn btn-primary btn-sm mb-3">Tambah</a>
-                <div class="table-responsive">
-                    <table class="table table-bordered text-nowrap align-middle mb-0" id="company_profile"
-                        style="table-layout: fixed;">
-                        <thead>
-                            <tr class="border-2 border-bottom border-primary border-0">
-                                <th style="text-align: left;">No</th>
-                                <th style="text-align: left;">Company</th>
-                                <th style="text-align: left;">About</th>
-                                <th style="text-align: left;">Tagline</th>
-                                <th style="text-align: left;">Logo</th>
-                                <th style="text-align: left;">Visi </th>
-                                <th style="text-align: left;">Misi </th>
-                                <th style="text-align: left;">History</th>
-                                <th style="text-align: left;">Address</th>
-                                <th style="text-align: left;">Phone</th>
-                                <th style="text-align: left;">Email</th>
-                                <th class="text-center" style="text-align: left;">Actions</th>
-                            </tr>
-                        </thead>
-
-                        <tbody class="table-group-divider">
-                            @foreach ($CompanyProfiles as $CompanyProfile)
-                                <tr>
-                                    <th scope="row">{{ $loop->iteration }}</th>
-                                    <td>
-                                        <div class="text-wrap">{{ $CompanyProfile->company_name }}</div>
-                                    </td>
-                                    <td>
-                                        <div class="text-wrap">{{ $CompanyProfile->about }}</div>
-                                    </td>
-                                    <td>
-                                        <div class="text-wrap">{{ $CompanyProfile->tagline }}</div>
-                                    </td>
-                                    <td>
-                                        <img src="{{ asset('storage/' .$CompanyProfile->logo) }}" alt="Logo" class="img-thumbnail"
-                                            style="max-width: 80px; height: auto;">
-                                    </td>
-                                    <td>
-                                        <div class="text-wrap scrollable-text">{{ $CompanyProfile->visi_company }}</div>
-                                    </td>
-                                    <td>
-                                        <div class="text-wrap scrollable-text">{{ $CompanyProfile->misi_company }}</div>
-                                    </td>
-                                    <td>
-                                        <div class="text-wrap scrollable-text">{{ $CompanyProfile->history }}</div>
-                                    </td>
-                                    <td>
-                                        <div class="text-wrap scrollable-text">{{ $CompanyProfile->addres }}</div>
-                                    </td>
-                                    <td>
-                                        <div class="text-wrap">{{ $CompanyProfile->phone_company }}</div>
-                                    </td>
-                                    <td>
-                                        <div class="text-wrap">{{ $CompanyProfile->email_company }}</div>
-                                    </td>
-                                    <td class="text-center">
-                                        <a href="{{ route('CompanyProfile_edit', $CompanyProfile->id_company) }}" class="btn btn-warning btn-sm">Edit</a>
-                                        <br>
-                                        <a href="{{ route('CompanyProfile_delete', $CompanyProfile->id_company) }}" onclick="return confirm('Yakin ingin hapus data?')"
-                                            class="btn btn-danger btn-sm">Delete</a>
-                                    </td>
+                @if ($data == 0)
+                    <a href="{{ route('admin.CompanyProfile_create') }}" class="btn btn-primary btn-sm mb-3">Tambah</a>
+                @endif
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-nowrap align-middle mb-0" id="company_profile"
+                            style="table-layout: fixed;">
+                            <thead>
+                                <tr class="border-2 border-bottom border-primary border-0">
+                                    <th style="text-align: left;">No</th>
+                                    <th style="text-align: left;">Company</th>
+                                    <th style="text-align: left;">About</th>
+                                    <th style="text-align: left;">Tagline</th>
+                                    <th style="text-align: left;">Logo</th>
+                                    <th style="text-align: left;">Visi </th>
+                                    <th style="text-align: left;">Misi </th>
+                                    <th style="text-align: left;">History</th>
+                                    <th style="text-align: left;">Address</th>
+                                    <th style="text-align: left;">Phone</th>
+                                    <th style="text-align: left;">Email</th>
+                                    <th class="text-center" style="text-align: left;">Actions</th>
                                 </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
+                            </thead>
+
+                            <tbody class="table-group-divider">
+                                @foreach ($CompanyProfiles as $CompanyProfile)
+                                    <tr>
+                                        <th scope="row">{{ $loop->iteration }}</th>
+                                        <td>
+                                            <div class="text-wrap">{{ $CompanyProfile->company_name }}</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap">{{ $CompanyProfile->about }}</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap">{{ $CompanyProfile->tagline }}</div>
+                                        </td>
+                                        <td>
+                                            <img src="{{ asset('storage/' . $CompanyProfile->logo) }}" alt="Logo"
+                                                class="img-thumbnail" style="max-width: 80px; height: auto;">
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap scrollable-text">{{ $CompanyProfile->visi_company }}</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap scrollable-text">{{ $CompanyProfile->misi_company }}</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap scrollable-text">{{ $CompanyProfile->history }}</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap scrollable-text">{{ $CompanyProfile->addres }}</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap">{{ $CompanyProfile->phone_company }}</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap">{{ $CompanyProfile->email_company }}</div>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="{{ route('CompanyProfile_edit', $CompanyProfile->id_company) }}"
+                                                class="btn btn-warning btn-sm">Edit</a>
+                                            <br>
+                                            <a href="{{ route('CompanyProfile_delete', $CompanyProfile->id_company) }}"
+                                                onclick="return confirm('Yakin ingin hapus data?')"
+                                                class="btn btn-danger btn-sm">Delete</a>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
             </div>
         </div>
     </div>

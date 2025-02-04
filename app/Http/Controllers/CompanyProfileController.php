@@ -10,8 +10,9 @@ use Psy\TabCompletion\Matcher\FunctionsMatcher;
 class CompanyProfileController extends Controller
 {
     public function CompanyProfile() {
+        $data = CompanyProfile::count();
         $CompanyProfiles = CompanyProfile::all();
-        return view('admin.company_profile', compact('CompanyProfiles'));
+        return view('admin.company_profile', compact('CompanyProfiles', 'data'));
     }
 
     public Function create() {
