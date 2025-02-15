@@ -5,21 +5,22 @@ namespace App\Http\Controllers;
 use App\Models\CompanyProfile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Psy\TabCompletion\Matcher\FunctionsMatcher;
 
 class CompanyProfileController extends Controller
 {
+    // Menampilkan halaman daftar Company Profile
     public function CompanyProfile() {
-        $data = CompanyProfile::count();
-        $CompanyProfiles = CompanyProfile::all();
+        $data = CompanyProfile::count(); // Menghitung jumlah data CompanyProfile
+        $CompanyProfiles = CompanyProfile::all(); // Mengambil semua data CompanyProfile
         return view('admin.company_profile', compact('CompanyProfiles', 'data'));
     }
 
-    public Function create() {
-
+    // Menampilkan halaman tambah Company Profile
+    public function create() {
         return view('admin.tambah_CompanyProfile');
     }
 
+    // Menyimpan data Company Profile baru ke database
     public function store(Request $request){
         $request->validate([
             'company_name' => 'required',
@@ -34,18 +35,16 @@ class CompanyProfileController extends Controller
             'email_company' => 'required',
         ]);
 
-
-
         $logo = null;
 
+        // Jika ada file logo yang diunggah, simpan di direktori storage
         if ($request->hasFile('logo')) {
             $uniqueField = uniqid() .'_'.$request->file('logo')->getClientOriginalName();
-
-            $request->file('logo')->storeAs('logo_company',$uniqueField, 'public');
-
+            $request->file('logo')->storeAs('logo_company', $uniqueField, 'public');
             $logo = 'logo_company/' . $uniqueField;
         }
 
+        // Menyimpan data ke database
         CompanyProfile::create([
             'company_name' => $request->company_name,
             'about' => $request->about,
@@ -58,18 +57,20 @@ class CompanyProfileController extends Controller
             'phone_company' => $request->phone_company,
             'email_company' => $request->email_company,
         ]);
+
         return redirect()->route('admin.CompanyProfile')->with('success', 'Data Company berhasil ditambahkan!');
     }
 
+    // Menampilkan halaman edit Company Profile berdasarkan ID
     public function edit($id_company) {
-        $CompanyProfile = Companyprofile::find($id_company);
-
+        $CompanyProfile = CompanyProfile::find($id_company);
         return view('admin.edit_CompanyProfile', compact('CompanyProfile'));
     }
 
+    // Memperbarui data Company Profile berdasarkan ID
     public function update(Request $request, string $id_company)
     {
-        $CompanyProfile = Companyprofile::find($id_company);
+        $CompanyProfile = CompanyProfile::find($id_company);
 
         $request->validate([
             'company_name' => 'nullable',
@@ -84,17 +85,16 @@ class CompanyProfileController extends Controller
             'email_company' => 'nullable',
         ]);
 
-       $logo = null;
+        $logo = $CompanyProfile->logo;
 
+        // Jika ada logo baru, simpan dan timpa yang lama
         if ($request->hasFile('logo')) {
             $uniqueField = uniqid() .'_'.$request->file('logo')->getClientOriginalName();
-
-            $request->file('logo')->storeAs('logo_company',$uniqueField, 'public');
-
+            $request->file('logo')->storeAs('logo_company', $uniqueField, 'public');
             $logo = 'logo_company/' . $uniqueField;
         }
 
-
+        // Memperbarui data di database
         $CompanyProfile->update([
             'company_name' => $request->company_name,
             'about' => $request->about,
@@ -108,24 +108,20 @@ class CompanyProfileController extends Controller
             'email_company' => $request->email_company,
         ]);
 
-        return redirect()->route('admin.CompanyProfile', $id_company)->with('succsess',' Data siswa berhasil diupdate');
+        return redirect()->route('admin.CompanyProfile', $id_company)->with('success', 'Data Company berhasil diupdate');
     }
 
+    // Menghapus Company Profile berdasarkan ID
     public function delete($id_company){
+        $CompanyProfile = CompanyProfile::find($id_company);
 
-        $CompanyProfile = Companyprofile::find($id_company);
-
-        $logo = $CompanyProfile->logo;
-
-        if ($CompanyProfile->logo) {
-            if (Storage::disk('public')->exists($logo)) {
-                Storage::disk('public')->delete($logo);
-            }
+        // Jika ada logo yang tersimpan, hapus dari storage
+        if ($CompanyProfile->logo && Storage::disk('public')->exists($CompanyProfile->logo)) {
+            Storage::disk('public')->delete($CompanyProfile->logo);
         }
 
         $CompanyProfile->delete();
 
         return redirect()->back()->with('success', 'Data Company berhasil dihapus.');
     }
-
 }

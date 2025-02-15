@@ -23,6 +23,7 @@
                                 <th style="width: 10%;">email</th>
                                 <th style="width: 10%;">subject</th>
                                 <th style="width: 10%;">message</th>
+                                <th style="width: 10%;">actions</th>
                             </tr>
                         </thead>
                         <tbody class="table-group-divider">
@@ -40,6 +41,11 @@
                                     </td>
                                     <td>
                                         <div class="text-wrap">{{ $Contact->message }}</div>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="{{ route('Contacts_delete', $Contact->id_contacts) }}"
+                                            onclick="return confirm('Yakin ingin hapus data?')"
+                                            class="btn btn-danger btn-sm">Delete</a>
                                     </td>
                                 </tr>
                             @endforeach

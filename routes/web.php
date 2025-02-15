@@ -26,6 +26,7 @@ Route::middleware(['role:admin'])->group(function () {
     Route::get('/admin/dashboard', [UserController::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/admin/logout', [UserController::class, 'Adminlogout'])->name('admin.logout');
 
+    // Company Profile Route
     Route::get('/admin/CompanyProfile', [CompanyProfileController::class, 'CompanyProfile'])->name('admin.CompanyProfile');
     Route::get('/admin/CompanyProfile/create', [CompanyProfileController::class, 'create'])->name('admin.CompanyProfile_create');
     Route::post('/admin/CompanyProfile/store', [CompanyProfileController::class, 'store'])->name('admin.CompanyProfile_store');
@@ -33,6 +34,7 @@ Route::middleware(['role:admin'])->group(function () {
     Route::put('/admin/CompanyProfile/edit/{id_CompanyProfile}', [CompanyProfileController::class, 'update'])->name('CompanyProfile_update');
     Route::get('/admin/CompanyProfile/delete/{id_CompanyProfile}',[CompanyProfileController::class, "delete"])->name('CompanyProfile_delete');
 
+    // Services Route
     Route::get('/admin/Services', [ServicesController::class, 'Services'])->name('admin.Services');
     Route::get('/admin/Services/create', [ServicesController::class, 'create'])->name('admin.Services_create');
     Route::post('/admin/Services/store', [ServicesController::class, 'store'])->name('admin.Services_store');
@@ -40,6 +42,7 @@ Route::middleware(['role:admin'])->group(function () {
     Route::put('/admin/Services/edit/{id_services}', [ServicesController::class, 'update'])->name('Services_update');
     Route::get('/admin/Services/delete/{id_services}',[ServicesController::class, "delete"])->name('Services_delete');
 
+    // Products Route
     Route::get('/admin/Products', [ProductsController::class, 'Products'])->name('admin.Products');
     Route::get('/admin/Products/create', [ProductsController::class, 'create'])->name('admin.Products_create');
     Route::post('/admin/Products/store', [ProductsController::class, 'store'])->name('admin.Products_store');
@@ -47,6 +50,7 @@ Route::middleware(['role:admin'])->group(function () {
     Route::put('/admin/Products/edit/{id_Products}', [ProductsController::class, 'update'])->name('Products_update');
     Route::get('/admin/Products/delete/{id_Products}',[ProductsController::class, "delete"])->name('Products_delete');
 
+    // Testimonials Route
     Route::get('/admin/Testimonials', [TestimonialsController::class, 'Testimonials'])->name('admin.Testimonials');
     Route::get('/admin/Testimonials/create', [TestimonialsController::class, 'create'])->name('admin.Testimonials_create');
     Route::post('/admin/Testimonials/store', [TestimonialsController::class, 'store'])->name('admin.Testimonials_store');
@@ -54,6 +58,7 @@ Route::middleware(['role:admin'])->group(function () {
     Route::put('/admin/Testimonials/edit/{id_Testimonials}', [TestimonialsController::class, 'update'])->name('Testimonials_update');
     Route::get('/admin/Testimonials/delete/{id_Testimonials}',[TestimonialsController::class, "delete"])->name('Testimonials_delete');
 
+    // Galleries Route
     Route::get('/admin/Galleries', [GalleriesController::class, 'Galleries'])->name('admin.Galleries');
     Route::get('/admin/Galleries/create', [GalleriesController::class, 'create'])->name('admin.Galleries_create');
     Route::post('/admin/Galleries/store', [GalleriesController::class, 'store'])->name('admin.Galleries_store');
@@ -61,6 +66,7 @@ Route::middleware(['role:admin'])->group(function () {
     Route::put('/admin/Galleries/edit/{id_Galleries}', [GalleriesController::class, 'update'])->name('Galleries_update');
     Route::get('/admin/Galleries/delete/{id_Galleries}',[GalleriesController::class, "delete"])->name('Galleries_delete');
 
+    // Contacts Route
     Route::get('/admin/Contacts', [ContactsController::class, 'Contacts'])->name('admin.Contacts');
     Route::get('/admin/Contacts/create', [ContactsController::class, 'create'])->name('admin.Contacts_create');
     Route::post('/admin/Contacts/store', [ContactsController::class, 'store'])->name('admin.Contacts_store');
@@ -69,6 +75,7 @@ Route::middleware(['role:admin'])->group(function () {
     Route::get('/admin/Contacts/delete/{id_Contacts}',[ContactsController::class, "delete"])->name('Contacts_delete');
 
 
+    // User Profile Route
     Route::get('/admin/profile', [UserController::class, 'profile'])->name('admin.profile');
     Route::get('/admin/profile/view/update', [UserController::class, 'profileViewUpdate'])->name('admin.profile.view.update');
     Route::put('/admin/profile/update', [UserController::class, 'updateProfile'])->name('admin.profile.update');

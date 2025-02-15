@@ -13,9 +13,9 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Company Profile</h5>
-                @if ($data == 0)
+                {{-- @if ($data == 0) --}}
                     <a href="{{ route('admin.CompanyProfile_create') }}" class="btn btn-primary btn-sm mb-3">Tambah</a>
-                @endif
+                {{-- @endif --}}
                     <div class="table-responsive">
                         <table class="table table-bordered text-nowrap align-middle mb-0" id="company_profile"
                             style="table-layout: fixed;">

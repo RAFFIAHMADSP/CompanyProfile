@@ -37,7 +37,6 @@ class UserController extends Controller
     public function profileViewUpdate(){
         $admin = User::where('role', 'admin')->first();
 
-// dd($admins);
         return view('admin.edit_profile', compact('admin'));
     }
     public function updateProfile(Request $request){
